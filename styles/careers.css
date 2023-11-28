@@ -1,0 +1,55 @@
+.cover-img{
+  width:100%;
+  height:400px;
+  object-fit: cover;
+}
+h2{
+  display: inline-block;
+}
+#join{
+  text-align:center;
+  padding:5% 0%;
+  border: 10px solid #93CD01;
+  margin-bottom:5%;
+  border-radius: 20px;
+}
+#who{
+  padding: 5% 0%;
+  background: #93CD01;
+  margin-bottom:5%;
+  margin-left: -4.25%;
+  margin-right: -4.25%;
+}
+#who img{
+  margin:0% 15%;
+}
+#who-text{
+  margin:0% 15%;
+}
+
+#values .fourthSplitGrid{
+  padding-top:2%;
+}
+.fourthSplitGrid{
+  position: relative;
+  display: grid;
+  grid-template-columns: 21% 21% 21% 21%;
+  grid-template-rows: 100%;
+  padding: 0% 10%;
+  grid-column-gap:5%;
+}
+#values{
+  text-align: center;
+  margin-bottom:5%;
+}
+.value-img{
+  width:200px;
+}
+
+#benefits{
+  margin-bottom:5%;
+}
+#benefit-list{
+  margin:auto;
+  margin-left:10%;
+}

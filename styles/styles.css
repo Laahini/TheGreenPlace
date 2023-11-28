@@ -26,6 +26,12 @@ li {
 a {
   text-decoration: none;
 }
+img{
+  z-index: -100;
+}
+.left{
+  text-align:left;
+}
 #nav{
   position: fixed;
   top:0;
@@ -33,7 +39,6 @@ a {
 }
 #body2{
   margin:4%;
-  margin-top: 100px;
 }
 .input-toggler {
   display: none;
@@ -46,7 +51,7 @@ a {
   width: 60px;
   height: 60px;
   background: #93CD01;
-  z-index: 100;
+  z-index: 1000000001;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,9 +93,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-
   transform: translateX(-100%);
-
+  z-index: 1000000000;
   transition: all 0.4s ease-out;
 }
 
@@ -106,8 +110,19 @@ a {
 .menu-link:active {
   color: #93CD01;
 }
-
 .input-toggler:checked ~ .sidebar {
   transform: translateX(0%);
-  opacity: 0.9;
+  opacity: 0.99;
+}
+
+
+
+
+.halfSplitGrid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: 100%;
+    padding: 0% 10%;
+    grid-column-gap: 5%;
 }

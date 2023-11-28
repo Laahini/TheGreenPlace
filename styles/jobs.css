@@ -1,0 +1,65 @@
+#body5{
+  margin:4%;
+  margin-top: 100px;
+}
+#listings{
+  text-align: center;
+  background: #93CD01;
+  margin: 5% -4.25%;
+  padding: 5% 0%;
+}
+.glass{
+background: rgba(255, 255, 255, 0.72);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+backdrop-filter: blur(6.8px);
+-webkit-backdrop-filter: blur(6.8px);
+border: 1px solid rgba(255, 255, 255, 0.54);
+margin:0% 15%;
+}
+.job-cta{
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.job-tags{
+  width:80%;
+  margin: auto;
+}
+.job-tag{
+  background: #4F7765;
+  border-radius: 20px;
+  width:auto;
+  height:30px;
+  color:white;
+  line-height: 30px;
+}
+.job-meta{
+  display: grid;
+  grid-template-columns:100%;
+  grid-template-rows: 40% 20% 40%;
+}
+.job-listing{
+  margin: 5% 5%;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+.job-descrip{
+  padding-left:5%;
+}
+.job-icon{
+  width:100px;
+  height:100px;
+  margin-top: 10%;
+}
+.jobListingSplitGrid{
+  position: relative;
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: 100%;
+}
+.jobMetaSplitGrid{
+  position: relative;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 100%;
+}

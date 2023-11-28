@@ -1,0 +1,15 @@
+.video-banner {
+  position: relative;
+  z-index:-3;
+}
+.video-banner .overlay {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+
+  z-index: 1;
+}
+#body2
+{
+  margin:5%;
+}
