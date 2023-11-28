@@ -53,3 +53,22 @@ h2{
   margin:auto;
   margin-left:10%;
 }
+
+
+#careerCover{
+
+  margin:5%;
+}
+.text-slider-items {
+    display: none;
+}
+
+.heading h1 {
+    color: limegreen;
+    font-size: 70px;
+}
+
+.heading h3 {
+    color: black;
+    font-size: 20px;
+}
