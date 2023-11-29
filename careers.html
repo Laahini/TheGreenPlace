@@ -10,7 +10,7 @@
   <title>Careers | The Green Place</title>
   <link href="styles/careers.css" rel="stylesheet">
   <script src="scripts/scripts.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
   <!--NAV-->
@@ -33,18 +33,29 @@
     </aside>
   </nav>
 
-  <div id="careerCover">
-    <div class="heading">
-        <h1>GeeksforGeeks</h1>
-        <h3>
-            <span class="text-slider-items">
-                A computer Science portal for
-                geeks, A place to practice code
-            </span>
-            <strong class="text-slider"></strong>
-        </h3>
+  <div id="careerCoverText">
+    <span id="element"></span>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Hey, want to join the <i>change</i>?', 'Join the <i>change</i>. '],
+        typeSpeed: 50,
+      });
+    </script>
+  </div>
+
+  <div id="jobSearchFilters">
+    <div class="filtersSplitGrid">
+      <div id="departmentFilter">
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
     </div>
   </div>
+
 
   <div id="careersCover2">
     <img class="cover-img" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=">
