@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles/styles.css" rel="stylesheet">
   <link rel="icon" href="media/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>Careers | The Green Place</title>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="styles/styles.css" rel="stylesheet">
   <link href="styles/careers.css" rel="stylesheet">
   <script src="scripts/scripts.js"></script>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
   <!--NAV-->
@@ -45,13 +49,27 @@
 
   <div id="jobSearchFilters">
     <div class="filtersSplitGrid">
-      <div id="departmentFilter">
-        <select name="cars" id="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
+      <div class="checkbox-dropdown">
+        Choose city
+        <ul class="checkbox-dropdown-list">
+          <li>
+            <label>
+              <input type="checkbox" value="Vejle" name="city" />Milwaukee</label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" value="Horsens" name="city" />Denver</label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" value="Kolding" name="city" />Boston</label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" value="Kolding" name="city" />LA</label>
+          </li>
+
+        </ul>
       </div>
     </div>
   </div>
