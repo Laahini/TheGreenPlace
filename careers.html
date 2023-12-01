@@ -10,11 +10,10 @@
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link href="styles/styles.css" rel="stylesheet">
   <link href="styles/careers.css" rel="stylesheet">
-  <script src="scripts/scripts.js"></script>
 </head>
 <body>
   <!--NAV-->
@@ -47,14 +46,79 @@
     </script>
   </div>
 
+
+
+
   <div id="jobSearchFilters">
     <div class="filtersSplitGrid">
       <div class="checkbox-dropdown">
         Choose city
         <ul class="checkbox-dropdown-list">
           <li>
-            <label>
-              <input type="checkbox" value="Vejle" name="city" />Milwaukee</label>
+            <label for="Cookies">
+              <input id="Cookies" name="yaybox" type="checkbox" value="Cookies" checked />
+              <span> Chocolate</span>
+            </label>
+          </li>
+          <li>
+            <label for="Cookies">
+              <input id="Cookies" name="yaybox" type="checkbox" value="Cookies" checked />
+              <span> Chocolate</span>
+            </label>
+          </li>
+          <li>
+            <label for="Cookies">
+              <input id="Cookies" name="yaybox" type="checkbox" value="Cookies" checked />
+              <span> Chocolate</span>
+            </label>
+          </li>
+          <li>
+            <label for="Cookies">
+              <input id="Cookies" name="yaybox" type="checkbox" value="Cookies" checked />
+              <span> Chocolate</span>
+            </label>
+          </li>
+
+        </ul>
+      </div>
+      <div class="checkbox-dropdown">
+        Choose city
+        <ul class="checkbox-dropdown-list">
+          <li>
+            <label for="Cookies">
+              <input id="Cookies" name="yaybox" type="checkbox" value="Cookies" checked />
+              <span>Chocolate Chip Cookies</span>
+            </label>
+          </li>
+          <li>
+            <label for="Cookies">
+              <input id="Cookies" name="yaybox" type="checkbox" value="Cookies" checked />
+              <span> Chocolate</span>
+            </label>
+          </li>
+          <li>
+            <label for="Cookies">
+              <input id="Cookies" name="yaybox" type="checkbox" value="Cookies" checked />
+              <span> Chocolate</span>
+            </label>
+          </li>
+          <li>
+            <label for="Cookies">
+              <input id="Cookies" name="yaybox" type="checkbox" value="Cookies" checked />
+              <span> Chocolate</span>
+            </label>
+          </li>
+
+        </ul>
+      </div>
+      <div class="checkbox-dropdown">
+        Choose city
+        <ul class="checkbox-dropdown-list">
+          <li>
+            <label for="Cookies">
+              <input id="Cookies" name="yaybox" type="checkbox" value="Cookies" checked />
+              <span> Chocolate</span>
+            </label>
           </li>
           <li>
             <label>
@@ -73,7 +137,102 @@
       </div>
     </div>
   </div>
+  <script>
 
+
+  </script>
+
+
+  <div id="imageGallery">
+      <div class="gallery">
+          <img class="cover-img" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=">
+      </div>
+
+      <div class="gallery">
+          <img class="cover-img" src="https://www.aimsindia.com/wp-content/uploads/2022/06/world-environment.png">
+      </div>
+
+      <div class="gallery">
+          <img class="cover-img" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=">
+      </div>
+
+      <div class="gallery">
+          <img class="cover-img" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=">
+      </div>
+
+      <div class="gallery">
+          <img class="cover-img" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=">
+      </div>
+
+      <div class="gallery">
+          <img class="cover-img" src="https://www.aimsindia.com/wp-content/uploads/2022/06/world-environment.png">
+      </div>
+
+      <div class="galleryControls">
+          <a id="prev" onclick="changeSlideBy(-1)">&#10094;</a>
+          <a id="next" onclick="changeSlideBy(1)">&#10095;</a>
+      </div>
+
+
+      <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <style>
+          .dot {
+              cursor: pointer;
+              height: 20px;
+              width: 20px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+          }
+
+          .active, .dot:hover {
+              background-color: #717171;
+          }
+
+          .galleryControls {
+              cursor: pointer;
+              color: gray;
+              font-weight: bold;
+              font-size: 70px;
+              text-align: center;
+          }
+
+      </style>
+      <script>
+          let slideIndex = 0;
+          currentSlide(slideIndex);
+
+          function changeSlideBy(n) {
+              currentSlide(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+              let gallery = document.getElementsByClassName("gallery");
+              let dots = document.getElementsByClassName("dot");
+              slideIndex = n < 0 ? gallery.length - 1 : n % gallery.length;
+
+              for (let i = 0; i < gallery.length; i++) {
+                  gallery[i].style.display = "none";
+              }
+
+              for (let j = 0; j < dots.length; j++) {
+                  dots[j].className = dots[j].className.replace(" active", "");
+              }
+
+              gallery[slideIndex].style.display = "block";
+              dots[slideIndex].className += " active";
+          }
+      </script>
+  </div>
 
   <div id="careersCover2">
     <img class="cover-img" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=">
@@ -83,7 +242,7 @@
     <div id="join">
       <h2>Join the</h2>
       <h2>change.</h2>
-      <p>Plantsome is growing like a weed and we're always looking for talented individuals to join our team. Let's get acquainted shall we?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id pretium tortor. Donec et dui elementum, venenatis nisi ornare, dictum nibh. Quisque id ipsum vehicula, ullamcorper turpis vitae, dapibus erat. Maecenas ultrices, elit non iaculisu, fac</p>
       <a href="currentJobs.html" class="btn">Explore all jobs</a>
     </div>
 
@@ -95,7 +254,7 @@
         <h2>Who</h2>
         <h2>we</h2>
         <h2>are.</h2>
-        <p>PSwapfiets is on a mission to make cities more liveable. That means reducing traffic congestion, increasing freedom of movement and happier, healthier people. Part of this mission? Declaring war on unnecessary waste. How? Through circularity. Simple. We believe this planet has enough stuff and think it's time to start owning less and start (re-) using more!alented individuals to join our team. Let's get acquainted shall we?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id pretium tortor. Donec et dui elementum, venenatis nisi ornare, dictum nibh. Quisque id ipsum vehicula, ullamcorper turpis vitae, dapibus erat. Maecenas ultrices, elit non iaculis iaculis, libero neque malesuada ipsum, non maximus arcu nibh in ipsum. Aliquam erat volutpat. Phasellus at neque sed sapien tristique blandit. Aenean sit amet ultricies velit. In ac euismod massa, ut lacinia neque. Etiam ipsum tellus, finibus id mi ut, placerat egestas neque. Vivamus vestibulum, leo eget porttitor vulputate, urna justo blandit mi, fermentum convallis nunc neque ut neque. Donec gravida aliquam sapien, sed porta ante maximus nec. Nulla tempus neque ullamcorper, feugiat tortor eu, fac</p>
       </div>
     </div>
 
@@ -145,6 +304,8 @@
 
 
   </div>
+
+  <script src="scripts/scripts.js"></script>
 
 </body>
 

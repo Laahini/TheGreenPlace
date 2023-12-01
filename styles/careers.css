@@ -98,22 +98,22 @@ h2{
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 100%; /* align the dropdown right below the dropdown text */
+    top: 100%;
     border: inherit;
     border-top: none;
-    left: -1px; /* align the dropdown to the left */
-    right: -1px; /* align the dropdown to the right */
-    opacity: 0; /* hide the dropdown */
+    left: -1px;
+    right: -1px; 
+    opacity: 0;
 
     transition: opacity 0.4s ease-in-out;
     height: 100px;
     overflow: scroll;
     overflow-x: hidden;
-    pointer-events: none; /* avoid mouse click events inside the dropdown */
+    pointer-events: none;
 }
 .is-active .checkbox-dropdown-list {
-    opacity: 1; /* display the dropdown */
-    pointer-events: auto; /* make sure that the user still can select checkboxes */
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .checkbox-dropdown-list li label {
@@ -127,4 +127,10 @@ h2{
 .checkbox-dropdown-list li label:hover {
     background-color: #555;
     color: white;
+}
+.filtersSplitGrid{
+  position: relative;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 100%;
 }
