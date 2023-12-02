@@ -9,18 +9,19 @@
   <title>Current Jobs | The Green Place</title>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"rel="stylesheet">
+
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link href="styles/styles.css" rel="stylesheet">
   <link href="styles/careers.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8e3d02b138.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!--NAV-->
   <nav id="nav">
     <a href="#" id="logo"><img src="media/logo.png" style="padding:10px; width:100px; height:100px;"></a>
     <input type="checkbox" id="toggle" class="input-toggler">
-    <label class="check" for="toggle" class="menu-toggler">
+    <label for="toggle" class="menu-toggler">
       <span class="menu-toggler-line" style="margin-top:5px;"></span>
       <span class="menu-toggler-line"></span>
       <span class="menu-toggler-line"></span>
@@ -28,7 +29,7 @@
 
     <aside class="sidebar">
       <ul class="menu">
-        <li><a class="menu-link" href="index.html">Home</a></li>
+        <li><a class="menu-link" href="#">Home</a></li>
         <li><a class="menu-link" href="#">Projects</a></li>
         <li><a class="menu-link" href="careers.html">Careers</a></li>
         <li><a class="menu-link" href="#">Contact</a></li>
@@ -52,109 +53,150 @@
   <div id="jobSearchFilters">
     <div class="filtersSplitGrid">
       <div class="checkbox-dropdown">
-        Choose city
+        Choose Career Type
         <ul class="checkbox-dropdown-list">
           <li class="checkboxes__item">
             <label class="check" for="Cookies">
               <input id="Cookies" name="yaybox" type="checkbox" value="Cookies"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate</span>
-            </label>
-          </li>
-          <li class="checkboxes__item">
-            <label class="check" for="Cookies2">
-              <input id="Cookies2" name="yaybox" type="checkbox" value="Cookies"  />
-              <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate</span>
-            </label>
-          </li>
-          <li class="checkboxes__item">
-            <label class="check" for="Cookies3">
-              <input id="Cookies3" name="yaybox" type="checkbox" value="Cookies"  />
-              <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspEngineering</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label class="check" for="Cookies4">
               <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspResearch and Development</span>
             </label>
           </li>
-
+          <li class="checkboxes__item">
+            <label class="check" for="Cookies4">
+              <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspProject Management</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="Cookies2">
+              <input id="Cookies2" name="yaybox" type="checkbox" value="Cookies"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspDesign</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="Cookies3">
+              <input id="Cookies3" name="yaybox" type="checkbox" value="Cookies"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspSales & Marketing</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="Cookies4">
+              <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspFinance</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="Cookies4">
+              <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspPolicy & Advocacy</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="Cookies4">
+              <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspOperations & Maintenance</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="Cookies4">
+              <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspHuman Resources</span>
+            </label>
+          </li>
         </ul>
       </div>
       <div class="checkbox-dropdown">
-        Choose city
+        Choose Location
         <ul class="checkbox-dropdown-list">
           <li class="checkboxes__item">
             <label class="check" for="Cookies5">
               <input id="Cookies5" name="yaybox" type="checkbox" value="Cookies"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate Chip Cookies</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspPittsburgh, PA</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label class="check" for="Cookies6">
               <input id="Cookies6" name="yaybox" type="checkbox" value="Cookies"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspNew York City, NY</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label class="check" for="Cookies7">
               <input id="Cookies7" name="yaybox" type="checkbox" value="Cookies"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspBoulder, CO</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="Cookies7">
+              <input id="Cookies7" name="yaybox" type="checkbox" value="Cookies"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspNapa, CA</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label class="check" for="Cookies8">
               <input id="Cookies8" name="yaybox" type="checkbox" value="Cookies"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspRemote</span>
             </label>
           </li>
 
         </ul>
       </div>
       <div class="checkbox-dropdown">
-        Choose city
+        Choose Job Type
         <ul class="checkbox-dropdown-list">
           <li class="checkboxes__item">
             <label class="check" for="Cookies9">
               <input id="Cookies9" name="yaybox" type="checkbox" value="Cookies"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate Chip Cookies</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspPermanent</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label class="check" for="Cookies10">
               <input id="Cookies10" name="yaybox" type="checkbox" value="Cookies"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspEarly Career Program</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label class="check" for="Cookies11">
               <input id="Cookies11" name="yaybox" type="checkbox" value="Cookies"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspInternship</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label class="check" for="Cookies12">
               <input id="Cookies12" name="yaybox" type="checkbox" value="Cookies"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspShort-Term</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label class="check" for="Cookies13">
               <input id="Cookies13" name="yaybox" type="checkbox" value="Cookies"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbspChocolate</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspFull-Time Contractor</span>
             </label>
           </li>
         </ul>
@@ -165,21 +207,201 @@
   <div id="jobBoard">
     <div id="jobBoardPreview">
       <div class="jobCard">
+        <div class="openJob">
+          <div>
+            <h1>Name of Position</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit, purus ac finibus finibus, ante justo interdum dui, a malesuada lorem eros ac tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis part</p>
+            <div class="tags">
+              <div class="location">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <h3>Location Here</h3>
+              </div>
+              <div class="workType">
+                <i class="fa-solid fa-briefcase fa-xl"></i>
+                <h3>Work Type</h3>
+              </div>
+            </div>
+          </div>
+          <div class="categoryContainer">
+            <div class="jobCategory">
+              <h3>Category Here</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jobCard">
+        <div class="openJob">
+          <div>
+            <h1>Name of Position2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit, purus ac finibus finibus, ante justo interdum dui, a malesuada lorem eros ac tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis part</p>
+            <div class="tags">
+              <div class="location">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <h3>Location Here2</h3>
+              </div>
+              <div class="workType">
+                <i class="fa-solid fa-briefcase fa-xl"></i>
+                <h3>Work Type2</h3>
+              </div>
+            </div>
+          </div>
+          <div class="categoryContainer">
+            <div class="jobCategory">
+              <h3>Category Here2</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jobCard hidden">
+        <div class="openJob">
+          <div>
+            <h1>Name of Position3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit, purus ac finibus finibus, ante justo interdum dui, a malesuada lorem eros ac tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis part</p>
+            <div class="tags">
+              <div class="location">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <h3>Location Here3</h3>
+              </div>
+              <div class="workType">
+                <i class="fa-solid fa-briefcase fa-xl"></i>
+                <h3>Work Type3</h3>
+              </div>
+            </div>
+          </div>
+          <div class="categoryContainer">
+            <div class="jobCategory">
+              <h3>Category Here3</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jobCard hidden">
+        <div class="openJob">
+          <div>
+            <h1>Name of Position4</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit, purus ac finibus finibus, ante justo interdum dui, a malesuada lorem eros ac tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis part</p>
+            <div class="tags">
+              <div class="location">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <h3>Location Here4</h3>
+              </div>
+              <div class="workType">
+                <i class="fa-solid fa-briefcase fa-xl"></i>
+                <h3>Work Type4</h3>
+              </div>
+            </div>
+          </div>
+          <div class="categoryContainer">
+            <div class="jobCategory">
+              <h3>Category Here4</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <button id="showMoreBtn" onclick="showMore();">click</button>
   </div>
 
-
-  <div id="body2">
-
-
-
+  <div id="contactJobs">
+    <div class="contactGrid">
+      <div>
+        <h4>Nothing available that matches your skillset?</h4>
+        <h1>Sign up for future updates</h1>
+        <form id="contactJobForm">
+          <div>
+            <label>Your email</label>
+            <span>*</span>
+          </div>
+          <div>
+            <input type="email" placeholder="example@thegreenplace.com" required>
+          </div>
+          <div>
+            <p>Which roles would you like to be notified about?</p>
+          </div>
+          <div id="contactRolesQuestion">
+            <ul class="contactCategoryGrid">
+              <li>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Boulder, CO</span>
+                </label>
+              </li>
+              <li>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Boulder, CO</span>
+                </label>
+              </li>
+              <li>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Boulder, CO</span>
+                </label>
+              </li>
+              <li>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Boulder, CO</span>
+                </label>
+              </li>
+              <li>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Boulder, CO</span>
+                </label>
+              </li>
+              <li>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Boulder, CO</span>
+                </label>
+              </li>
+              <li>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Boulder, CO</span>
+                </label>
+              </li>
+              <li>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Boulder, CO</span>
+                </label>
+              </li>
+              <li>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Boulder, CO</span>
+                </label>
+              </li>
+              <li>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Boulder, CO</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <button class="jobContactSubmit">Get Notified</button>
+        </form>
+      </div>
+      <div class="contactImg"></div>
+    </div>
   </div>
-
   <script src="scripts/scripts.js"></script>
-
 </body>
 
 <footer>
+  
 </footer>
 </html>
