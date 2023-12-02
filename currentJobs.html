@@ -8,12 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>Current Jobs | The Green Place</title>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css" />
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link href="styles/styles.css" rel="stylesheet">
-  <link href="styles/careers.css" rel="stylesheet">
+  <link href="styles/jobs.css" rel="stylesheet">
 <script src="https://kit.fontawesome.com/8e3d02b138.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -56,64 +57,64 @@
         Choose Career Type
         <ul class="checkbox-dropdown-list">
           <li class="checkboxes__item">
-            <label class="check" for="Cookies">
-              <input id="Cookies" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="engineering">
+              <input id="engineering" name="careerType" type="checkbox" value="engineering"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspEngineering</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies4">
-              <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="rAndD">
+              <input id="rAndD" name="careerType" type="checkbox" value="rAndD"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspResearch and Development</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies4">
-              <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="projectManagement">
+              <input id="projectManagement" name="careerType" type="checkbox" value="projectManagement"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspProject Management</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies2">
-              <input id="Cookies2" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="design">
+              <input id="design" name="careerType" type="checkbox" value="design"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspDesign</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies3">
-              <input id="Cookies3" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="salesAndMarketing">
+              <input id="salesAndMarketing" name="careerType" type="checkbox" value="salesAndMarketing"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspSales & Marketing</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies4">
-              <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="finance">
+              <input id="finance" name="careerType" type="checkbox" value="finance"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspFinance</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies4">
-              <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="policy">
+              <input id="policy" name="careerType" type="checkbox" value="policy"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspPolicy & Advocacy</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies4">
-              <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="operations">
+              <input id="operations" name="careerType" type="checkbox" value="operations"  />
               <div class="box"></div>
-              <span>&nbsp&nbsp&nbsp&nbsp&nbspOperations & Maintenance</span>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspOperations</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies4">
-              <input id="Cookies4" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="humanresources">
+              <input id="humanresources" name="careerType" type="checkbox" value="humanresources"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspHuman Resources</span>
             </label>
@@ -124,36 +125,36 @@
         Choose Location
         <ul class="checkbox-dropdown-list">
           <li class="checkboxes__item">
-            <label class="check" for="Cookies5">
-              <input id="Cookies5" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="pittsburgh">
+              <input id="pittsburgh" name="location" type="checkbox" value="pittsburgh"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspPittsburgh, PA</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies6">
-              <input id="Cookies6" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="newyork">
+              <input id="newyork" name="location" type="checkbox" value="newyork"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspNew York City, NY</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies7">
-              <input id="Cookies7" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="boulder">
+              <input id="boulder" name="location" type="checkbox" value="boulder"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspBoulder, CO</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies7">
-              <input id="Cookies7" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="napa">
+              <input id="napa" name="location" type="checkbox" value="napa"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspNapa, CA</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies8">
-              <input id="Cookies8" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="remote">
+              <input id="remote"name="location" type="checkbox" value="remote"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspRemote</span>
             </label>
@@ -165,36 +166,36 @@
         Choose Job Type
         <ul class="checkbox-dropdown-list">
           <li class="checkboxes__item">
-            <label class="check" for="Cookies9">
-              <input id="Cookies9" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="permanent">
+              <input id="permanent" name="jobType" type="checkbox" value="permanent"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspPermanent</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies10">
-              <input id="Cookies10" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="careerProgram">
+              <input id="careerProgram" name="jobType" type="checkbox" value="careerProgram"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspEarly Career Program</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies11">
-              <input id="Cookies11" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="internship">
+              <input id="internship" name="jobType" type="checkbox" value="internship"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspInternship</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies12">
-              <input id="Cookies12" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="short">
+              <input id="short" name="jobType" type="checkbox" value="short"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspShort-Term</span>
             </label>
           </li>
           <li class="checkboxes__item">
-            <label class="check" for="Cookies13">
-              <input id="Cookies13" name="yaybox" type="checkbox" value="Cookies"  />
+            <label class="check" for="fullTime">
+              <input id="fullTime" name="jobType" type="checkbox" value="fullTime"  />
               <div class="box"></div>
               <span>&nbsp&nbsp&nbsp&nbsp&nbspFull-Time Contractor</span>
             </label>
@@ -206,7 +207,7 @@
 
   <div id="jobBoard">
     <div id="jobBoardPreview">
-      <div class="jobCard">
+      <div class="jobCard finance remote fullTime">
         <div class="openJob">
           <div>
             <h1>Name of Position</h1>
@@ -214,22 +215,22 @@
             <div class="tags">
               <div class="location">
                 <i class="fa-solid fa-location-dot fa-xl"></i>
-                <h3>Location Here</h3>
+                <h3>Remote</h3>
               </div>
               <div class="workType">
                 <i class="fa-solid fa-briefcase fa-xl"></i>
-                <h3>Work Type</h3>
+                <h3>Full-Time Contractor</h3>
               </div>
             </div>
           </div>
           <div class="categoryContainer">
             <div class="jobCategory">
-              <h3>Category Here</h3>
+              <h3>Finance</h3>
             </div>
           </div>
         </div>
       </div>
-      <div class="jobCard">
+      <div class="jobCard rAndD newyork fullTime">
         <div class="openJob">
           <div>
             <h1>Name of Position2</h1>
@@ -237,22 +238,22 @@
             <div class="tags">
               <div class="location">
                 <i class="fa-solid fa-location-dot fa-xl"></i>
-                <h3>Location Here2</h3>
+                <h3>New York City, NY</h3>
               </div>
               <div class="workType">
                 <i class="fa-solid fa-briefcase fa-xl"></i>
-                <h3>Work Type2</h3>
+                <h3>Full-Time Contractor</h3>
               </div>
             </div>
           </div>
           <div class="categoryContainer">
             <div class="jobCategory">
-              <h3>Category Here2</h3>
+              <h3>Research and Development</h3>
             </div>
           </div>
         </div>
       </div>
-      <div class="jobCard hidden">
+      <div class="jobCard rAndD newyork internship hidden">
         <div class="openJob">
           <div>
             <h1>Name of Position3</h1>
@@ -260,22 +261,22 @@
             <div class="tags">
               <div class="location">
                 <i class="fa-solid fa-location-dot fa-xl"></i>
-                <h3>Location Here3</h3>
+                <h3>New York City, NY</h3>
               </div>
               <div class="workType">
                 <i class="fa-solid fa-briefcase fa-xl"></i>
-                <h3>Work Type3</h3>
+                <h3>Internship</h3>
               </div>
             </div>
           </div>
           <div class="categoryContainer">
             <div class="jobCategory">
-              <h3>Category Here3</h3>
+              <h3>Research and Development</h3>
             </div>
           </div>
         </div>
       </div>
-      <div class="jobCard hidden">
+      <div class="jobCard salesAndMarketing napa fullTime hidden">
         <div class="openJob">
           <div>
             <h1>Name of Position4</h1>
@@ -283,125 +284,125 @@
             <div class="tags">
               <div class="location">
                 <i class="fa-solid fa-location-dot fa-xl"></i>
-                <h3>Location Here4</h3>
+                <h3>Napa, CA</h3>
               </div>
               <div class="workType">
                 <i class="fa-solid fa-briefcase fa-xl"></i>
-                <h3>Work Type4</h3>
+                <h3>Full-Time Contractor</h3>
               </div>
             </div>
           </div>
           <div class="categoryContainer">
             <div class="jobCategory">
-              <h3>Category Here4</h3>
+              <h3>Sales and Marketing</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <button id="showMoreBtn" onclick="showMore();">click</button>
+    <div class="showBtnContainer">
+      <button id="showMoreBtn" onclick="showMore();">Show More</button>
+      <p id="shownMessage"></p>
+    </div>
   </div>
 
   <div id="contactJobs">
-    <div class="contactGrid">
       <div>
         <h4>Nothing available that matches your skillset?</h4>
         <h1>Sign up for future updates</h1>
-        <form id="contactJobForm">
           <div>
             <label>Your email</label>
             <span>*</span>
           </div>
-          <div>
-            <input type="email" placeholder="example@thegreenplace.com" required>
+          <div id="emailContainer">
+            <input id="emailInput" type="email" name="email" placeholder="you@thegreenplace.com" required>
           </div>
-          <div>
+          <div id="roleQuestion">
             <p>Which roles would you like to be notified about?</p>
           </div>
-          <div id="contactRolesQuestion">
-            <ul class="contactCategoryGrid">
-              <li>
+          <div class="contactCategoryGrid">
+              <div>
                 <label class="check">
                   <input data-command="" type="checkbox" aria-checked="false">
                   <div class="box"></div>
-                  <span>Boulder, CO</span>
+                  <span>All Roles</span>
                 </label>
-              </li>
-              <li>
+              </div>
+              <div>
                 <label class="check">
                   <input data-command="" type="checkbox" aria-checked="false">
                   <div class="box"></div>
-                  <span>Boulder, CO</span>
+                  <span>Engineering</span>
                 </label>
-              </li>
-              <li>
+              </div>
+              <div>
                 <label class="check">
                   <input data-command="" type="checkbox" aria-checked="false">
                   <div class="box"></div>
-                  <span>Boulder, CO</span>
+                  <span>Research and Development</span>
                 </label>
-              </li>
-              <li>
+              </div>
+              <div>
                 <label class="check">
                   <input data-command="" type="checkbox" aria-checked="false">
                   <div class="box"></div>
-                  <span>Boulder, CO</span>
+                  <span>Finance</span>
                 </label>
-              </li>
-              <li>
+              </div>
+              <div>
                 <label class="check">
                   <input data-command="" type="checkbox" aria-checked="false">
                   <div class="box"></div>
-                  <span>Boulder, CO</span>
+                  <span>Sales and Marketing</span>
                 </label>
-              </li>
-              <li>
+              </div>
+              <div>
                 <label class="check">
                   <input data-command="" type="checkbox" aria-checked="false">
                   <div class="box"></div>
-                  <span>Boulder, CO</span>
+                  <span>Human Resources</span>
                 </label>
-              </li>
-              <li>
+              </div>
+              <div>
                 <label class="check">
                   <input data-command="" type="checkbox" aria-checked="false">
                   <div class="box"></div>
-                  <span>Boulder, CO</span>
+                  <span>Project Management</span>
                 </label>
-              </li>
-              <li>
+              </div>
+              <div>
                 <label class="check">
                   <input data-command="" type="checkbox" aria-checked="false">
                   <div class="box"></div>
-                  <span>Boulder, CO</span>
+                  <span>Design</span>
                 </label>
-              </li>
-              <li>
+              </div>
+              <div>
                 <label class="check">
                   <input data-command="" type="checkbox" aria-checked="false">
                   <div class="box"></div>
-                  <span>Boulder, CO</span>
+                  <span>Policy and Advocacy</span>
                 </label>
-              </li>
-              <li>
+              </div>
+              <div>
                 <label class="check">
                   <input data-command="" type="checkbox" aria-checked="false">
                   <div class="box"></div>
-                  <span>Boulder, CO</span>
+                  <span>Operations</span>
                 </label>
-              </li>
-            </ul>
+              </div>
           </div>
-          <button class="jobContactSubmit">Get Notified</button>
-        </form>
+          <button id="jobContactSubmit" onclick="ValidateEmail();">Get Notified</button>
+          <p id="submitted"></p>
       </div>
-      <div class="contactImg"></div>
-    </div>
+      <div class="contactImg">
+        <img src="https://th.bing.com/th/id/OIG.b7fbyFnoRp_h0eDim7rl">
+      </div>
   </div>
   <script src="scripts/scripts.js"></script>
 </body>
 
 <footer>
-  
+
 </footer>
 </html>

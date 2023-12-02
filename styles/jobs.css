@@ -1,65 +1,346 @@
-#body5{
-  margin:4%;
-  margin-top: 100px;
+
+#careerCoverText{
+  margin:15% 5% 5% 5%;
+  text-align:center;
 }
-#listings{
-  text-align: center;
-  background: #93CD01;
-  margin: 5% -4.25%;
-  padding: 5% 0%;
+#element{
+  font-size: 80px;
 }
-.glass{
-background: rgba(255, 255, 255, 0.72);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-backdrop-filter: blur(6.8px);
--webkit-backdrop-filter: blur(6.8px);
-border: 1px solid rgba(255, 255, 255, 0.54);
-margin:0% 15%;
+#jobSearchFilters{
+  margin:5%;
 }
-.job-cta{
-  font-size: 60px;
-  text-transform: uppercase;
+/*DROPDOWN FILTERS*/
+.checkbox-dropdown {
+    width: 300px;
+    border: 1px solid #aaa;
+    border-radius: 25px;
+    padding:3% 5%;
+    position: relative;
+    margin: 0 auto;
+    user-select: none;
 }
-.job-tags{
-  width:80%;
-  margin: auto;
+.checkbox-dropdown:hover {
+    border: 1px solid black;
 }
-.job-tag{
-  background: #4F7765;
+.checkbox-dropdown:after {
+    content:'';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 6px solid transparent;
+    border-top-color: black;
+    top: 50%;
+    right: 10px;
+    margin-top: -3px;
+}
+.checkbox-dropdown.is-active:after {
+    border-bottom-color: #000;
+    border-top-color: transparent;
+    margin-top: -9px;
+}
+.checkbox-dropdown.is-active {
+    background: #93CD01;
+}
+.checkbox-dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:150%;
+    border-radius: 10px;
+    border:1px solid black;
+    left: -1px;
+    right: -1px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    height: 250%;
+    overflow: scroll;
+    overflow-x: hidden;
+    pointer-events: none;
+    z-index: 1000;
+    background: white;
+}
+.is-active .checkbox-dropdown-list {
+    opacity: 1;
+    pointer-events: auto;
+}
+.checkbox-dropdown-list::-webkit-scrollbar {
+  width: 16px;
+}
+.checkbox-dropdown-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.checkbox-dropdown-list::-webkit-scrollbar-thumb {
+  background-color: black;
   border-radius: 20px;
-  width:auto;
-  height:30px;
-  color:white;
-  line-height: 30px;
+  border: 6px solid transparent;
+  background-clip: content-box;
 }
-.job-meta{
-  display: grid;
-  grid-template-columns:100%;
-  grid-template-rows: 40% 20% 40%;
+.checkbox-dropdown-list li label {
+    display: block;
+    padding: 3% 5%;
+    transition: all 0.2s ease-out;
 }
-.job-listing{
-  margin: 5% 5%;
-  border-radius: 10px;
-  border: 5px solid black;
+.checkbox-dropdown-list li label:hover {
+    background-color: #93CD01;
+    color: white;
 }
-.job-descrip{
-  padding-left:5%;
-}
-.job-icon{
-  width:100px;
-  height:100px;
-  margin-top: 10%;
-}
-.jobListingSplitGrid{
-  position: relative;
-  display: grid;
-  grid-template-columns: 60% 20% 20%;
-  grid-template-rows: 100%;
-}
-.jobMetaSplitGrid{
+.filtersSplitGrid{
   position: relative;
   display: grid;
   grid-template-columns: 33% 34% 33%;
   grid-template-rows: 100%;
+}
+/*CHECKBOXES DESIGN*/
+.box{
+  display: inline;
+}
+.check {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.check input:checked ~ .box {
+  background-color: #fff;
+}
+.check input:checked ~ .box:after {
+  opacity: 1;
+}
+.check:hover input ~ .box {
+  background-color: #eee;
+}
+.check:hover input:checked ~ .box {
+  background-color: #fff;
+}
+.check .box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 2px solid #333;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+.check .box:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.check span {
+  color: #333;
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: bold;
+}
+/*JOB BOARD*/
+#jobBoard{
+  padding:5%;
+  padding-top:0%;
+  margin-top:10%;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background: white;
+}
+.showBtnContainer{
+  text-align:center;
+}
+#showMoreBtn {
+  background-color: black;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+#showMoreBtn:hover {
+  background-color: white;
+  color:black;
+  box-shadow: #422800 2px 2px 0 0;
+}
+#showMoreBtn:active {
+  box-shadow: #422800 1px 1px 0 0;
+  transform: translate(2px, 2px);
+}
+@media (min-width: 768px) {
+  #showMoreBtn {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+#shownMessage{
+  font-size:18px;
+  color:gray;
+  padding-top:2%;
+}
+.jobCard{
+  border:2px solid black;
+  border-radius:15px;
+  margin:3% 5%;
+}
+.openJob{
+  position: relative;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 100%;
+  padding: 1% 1%;
+  margin: auto 2%;
+}
+.tags{
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  grid-template-rows: 100%;
+  margin: auto 5%;
+  margin-left:0;
+  margin-bottom: 1%;
+}
+.location h3, .workType h3{
+  display: inline;
+}
+.jobCard h1{
+  margin: 1% auto;
+}
+.jobCard p{
+  margin: 1% auto;
+  margin-bottom: 2%;
+}
+.jobCategory h3{
+  text-align:center;
+  margin:0%;
+}
+.jobCategory{
+  background:pink;
+  margin-top:5%;
+  border-radius: 25px;
+  margin-left:35%;
+  padding:5px 5px;
+  padding-right:10px;
+  padding-left:5px;
+}
+.hidden{
+  display: none;
+}
+#contactJobs{
+  padding:5%;
+  padding-left:10%;
+  background:#93CD01;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  display:grid;
+  grid-template-columns: 60% 40%;
+}
+.contactImg img{
+  width:100%;
+}
+.contactImg{
+  text-align:center;
+  margin:auto;
+  padding-right:15%;
+}
+.contactCategoryGrid{
+  display:grid;
+  grid-template-columns: 40% 40%;
+  grid-row-gap: 15%;
+  padding-bottom:10%;
+  margin-bottom:5%;
+}
+#contactJobs h4{
+  margin-bottom:0px;
+}
+#contactJobs h1{
+  margin-top:5px;
+  margin-bottom: 5%;
+}
+#contactJobs .check .box {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #333;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+#roleQuestion{
+  margin-top:6%;
+}
+#jobContactSubmit {
+  background-color: white;
+  border: 2px solid #422800;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 10px;
+  line-height: 30px;
+  text-align: center;
+  box-shadow: #422800 2px 2px 0 0;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+#jobContactSubmit:hover {
+  background-color: white;
+  color:black;
+  box-shadow: #422800 2px 2px 0 0;
+}
+#jobContactSubmit:active {
+  box-shadow: #422800 1px 1px 0 0;
+  transform: translate(2px, 2px);
+}
+@media (min-width: 768px) {
+  #jobContactSubmit {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+#emailContainer{
+  margin-top:2%;
+}
+#emailInput{
+  appearance: none;
+  background-color: none;
+  border: 2px solid black;
+  width:280px;
+  padding: 1.5% 2.5%;
+  border-radius: 10px;
+  font-size: 16px;
+}
+#emailInput:focus{
+  outline: none;
+  background:#fffeff;
+  color:black;
 }
