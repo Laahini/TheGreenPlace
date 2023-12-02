@@ -1,10 +1,194 @@
+#careerCoverText{
+  margin:15% 5% 5% 5%;
+  text-align:center;
+}
+#element{
+  font-size: 80px;
+}
+#jobSearchFilters, #jobBoard{
+  margin:5%;
+}
+/*DROPDOWN FILTERS*/
+.checkbox-dropdown {
+    width: 300px;
+    border: 1px solid #aaa;
+    border-radius: 25px;
+    padding:3% 5%;
+    position: relative;
+    margin: 0 auto;
+    user-select: none;
+}
+.checkbox-dropdown:hover {
+    border: 1px solid black;
+}
+.checkbox-dropdown:after {
+    content:'';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 6px solid transparent;
+    border-top-color: black;
+    top: 50%;
+    right: 10px;
+    margin-top: -3px;
+}
+.checkbox-dropdown.is-active:after {
+    border-bottom-color: #000;
+    border-top-color: transparent;
+    margin-top: -9px;
+}
+.checkbox-dropdown.is-active {
+    background: #93CD01;
+}
+.checkbox-dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:150%;
+    border-radius: 10px;
+    border:1px solid black;
+    left: -1px;
+    right: -1px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    height: 300%;
+    overflow: scroll;
+    overflow-x: hidden;
+    pointer-events: none;
+    z-index: 1000;
+    background: white;
+}
+.is-active .checkbox-dropdown-list {
+    opacity: 1;
+    pointer-events: auto;
+}
+.checkbox-dropdown-list::-webkit-scrollbar {
+  width: 16px;
+}
+.checkbox-dropdown-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.checkbox-dropdown-list::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+.checkbox-dropdown-list li label {
+    display: block;
+    padding: 3% 5%;
+    transition: all 0.2s ease-out;
+}
+.checkbox-dropdown-list li label:hover {
+    background-color: #93CD01;
+    color: white;
+}
+.filtersSplitGrid{
+  position: relative;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 100%;
+}
+/*CHECKBOXES DESIGN*/
+.box{
+  display: inline;
+}
+.check {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.check input:checked ~ .box {
+  background-color: #fff;
+}
+.check input:checked ~ .box:after {
+  opacity: 1;
+}
+.check:hover input ~ .box {
+  background-color: #eee;
+}
+.check:hover input:checked ~ .box {
+  background-color: #fff;
+}
+.check .box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 2px solid #333;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+.check .box:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.check span {
+  color: #333;
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: bold;
+}
+/*JOB BOARD*/
+#jobBoard{
+  margin-top:10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .cover-img{
   width:100%;
   height:400px;
   object-fit: cover;
-}
-h2{
-  display: inline-block;
 }
 #join{
   text-align:center;
@@ -52,85 +236,4 @@ h2{
 #benefit-list{
   margin:auto;
   margin-left:10%;
-}
-
-
-#careerCoverText{
-  margin:15% 5% 5% 5%;
-  text-align:center;
-}
-#element{
-  font-size: 80px;
-}
-
-#jobSearchFilters{
-  margin:5%;
-}
-.checkbox-dropdown {
-    width: 200px;
-    border: 1px solid #aaa;
-    padding: 10px;
-    position: relative;
-    margin: 0 auto;
-
-    user-select: none;
-}
-
-.checkbox-dropdown:after {
-    content:'';
-    height: 0;
-    position: absolute;
-    width: 0;
-    border: 6px solid transparent;
-    border-top-color: #000;
-    top: 50%;
-    right: 10px;
-    margin-top: -3px;
-}
-.checkbox-dropdown.is-active:after {
-    border-bottom-color: #000;
-    border-top-color: #fff;
-    margin-top: -9px;
-}
-
-.checkbox-dropdown-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 100%;
-    border: inherit;
-    border-top: none;
-    left: -1px;
-    right: -1px; 
-    opacity: 0;
-
-    transition: opacity 0.4s ease-in-out;
-    height: 100px;
-    overflow: scroll;
-    overflow-x: hidden;
-    pointer-events: none;
-}
-.is-active .checkbox-dropdown-list {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.checkbox-dropdown-list li label {
-    display: block;
-    border-bottom: 1px solid silver;
-    padding: 10px;
-
-    transition: all 0.2s ease-out;
-}
-
-.checkbox-dropdown-list li label:hover {
-    background-color: #555;
-    color: white;
-}
-.filtersSplitGrid{
-  position: relative;
-  display: grid;
-  grid-template-columns: 33% 34% 33%;
-  grid-template-rows: 100%;
 }
