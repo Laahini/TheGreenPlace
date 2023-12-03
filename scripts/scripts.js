@@ -79,3 +79,22 @@ function ValidateEmail()
 
 
 /*JOB APPLICATION*/
+function applyJob(job)
+{
+  if(job==="job1")
+  {
+    location.href="../apply/job1.html";
+  }
+  else if(job==="job2")
+  {
+    location.href="../apply/job2.html";
+  }
+  else if(job==="job3")
+  {
+    location.href="../apply/job3.html";
+  }
+  else if(job==="job4")
+  {
+    location.href="../apply/job4.html";
+  }
+}

@@ -29,7 +29,7 @@
 #applicationForm
 {
   background:#ffefff;
-  padding:5% 0%;
+  padding:5% 5%;
   border-radius: 40px;
 }
 #applicationForm h4{
@@ -39,22 +39,15 @@
   margin-bottom: 2%;
 }
 #applicationForm h1{
-  font-size: 60px;
+  font-size: 50px;
 }
-.questions{
-  overflow: hidden;
-  overflow-y: scroll;
-  height:100vh;
-}
-.questions::-webkit-scrollbar {
-    display: none; 
-}
-#info{
+#info, #links, #qualifications, #questions, #congrats{
   display: grid;
   grid-template-columns: 47.5% 47.5%;
   grid-column-gap: 5%;
   padding:5%;
   padding-top:2%;
+  padding-bottom:0;
 }
 .appImg{
   width:100%;
@@ -121,8 +114,8 @@
   margin:5% 0;
   margin-top: 4%;
 }
-#email, #phone, #currentJob{
-  margin:8% 0;
+#email, #phone, #currentJob, #linkedin, #website, #github, #other{
+  margin:9% 0;
 }
 .box{
   display: inline;
@@ -185,4 +178,200 @@
   line-height: 1.4;
   font-size: 18px;
   font-weight: normal;
+}
+/*UPLOAD*/
+#professionalDocs{
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  grid-column-gap:5%;
+  margin:0% 5%;
+}
+.modal-body {
+  padding: 1rem 0rem;
+}
+.modal-title {
+  font-weight: 700;
+}
+.drop-box {
+  margin-top: 1.25rem;
+  border: none;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='14%2c 14' stroke-dashoffset='26' stroke-linecap='butt'/%3e%3c/svg%3e");;
+  background-color: transparent;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+}
+.drop-box:hover, .drop-box:focus {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%232e44ff' stroke-width='4' stroke-dasharray='14%2c 14' stroke-dashoffset='26' stroke-linecap='butt'/%3e%3c/svg%3e");
+}
+.upload-area-title {
+  display: block;
+  font-weight: 700;
+}
+.upload-area-description {
+  display: block;
+}
+.upload-area-description strong {
+  font-weight: 700;
+}
+.uploadBtn {
+  text-decoration: none;
+  background-color: #005af0;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  margin:2%;
+  border-radius: 40px;
+  outline: none;
+  transition: 0.3s;
+}
+.uploadBtn:hover{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #005af0;
+  padding: 10px 20px;
+  border: none;
+  outline: 1px solid #010101;
+}
+input[type=file] {
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}
+.qualquestion textarea, .question textarea{
+  width: 100%;
+  height: 150px;
+  padding: 4% 4%;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 16px;
+  resize: none;
+  font-family: sans-serif;
+}
+.qualquestion h5, .question h5{
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom:10px;
+}
+#qualanswer4{
+  width: 100%;
+  height: 80px;
+}
+/*STARS*/
+.rateQuestion h5{
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom:10px;
+  text-align:center;
+}
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.rating > input {
+  display: none;
+}
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: 0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: 0.3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+#workingHours, #eligibility {
+  background: white;
+  border: none;
+  font-size: 16px;
+  margin: 0;
+  outline: 0;
+  width: 40%;
+  border:1px solid black;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  border-radius: 10px;
+  padding: 2%;
+  height: 40px;
+}
+#info img, #questions img{
+  height:100%;
+}
+.submitJobBtn {
+  background-color: black;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.submitJobBtn:hover {
+  background-color: white;
+  color:black;
+}
+.submitJobBtn:active {
+  box-shadow: #422800 1px 1px 0 0;
+  transform: translate(2px, 2px);
+}
+@media (min-width: 768px) {
+  .submitJobBtn {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+#congrats h1{
+  font-size: 100px;
+  margin-bottom:5%;
+}
+#congrats h2{
+  font-size: 40px;
+  margin-top:5%;
+}
+#congrats .submitJobBtn{
+  margin-top:10%;
 }
