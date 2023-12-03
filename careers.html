@@ -12,8 +12,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
   <link href="styles/styles.css" rel="stylesheet">
   <link href="styles/careers.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8e3d02b138.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!--NAV-->
@@ -36,135 +38,43 @@
     </aside>
   </nav>
 
-  <div id="careerCoverText2">
-    <span id="element"></span>
-    <script>
-      var typed = new Typed('#element', {
-        strings: ['Hey, want to join the <i>change</i>?', 'Join the <i>change</i>. '],
-        typeSpeed: 50,
-      });
-    </script>
-  </div>
-
-
-  <div id="imageGallery">
-      <div class="gallery">
-          <img class="cover-img" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=">
-      </div>
-
-      <div class="gallery">
-          <img class="cover-img" src="https://www.aimsindia.com/wp-content/uploads/2022/06/world-environment.png">
-      </div>
-
-      <div class="gallery">
-          <img class="cover-img" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=">
-      </div>
-
-      <div class="gallery">
-          <img class="cover-img" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=">
-      </div>
-
-      <div class="gallery">
-          <img class="cover-img" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=">
-      </div>
-
-      <div class="gallery">
-          <img class="cover-img" src="https://www.aimsindia.com/wp-content/uploads/2022/06/world-environment.png">
-      </div>
-
-      <div class="galleryControls">
-          <a id="prev" onclick="changeSlideBy(-1)">&#10094;</a>
-          <a id="next" onclick="changeSlideBy(1)">&#10095;</a>
-      </div>
-
-
-      <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(0)"></span>
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-      </div>
-      <style>
-          .dot {
-              cursor: pointer;
-              height: 20px;
-              width: 20px;
-              margin: 0 2px;
-              background-color: #bbb;
-              border-radius: 50%;
-              display: inline-block;
-              transition: background-color 0.6s ease;
-          }
-
-          .active, .dot:hover {
-              background-color: #717171;
-          }
-
-          .galleryControls {
-              cursor: pointer;
-              color: gray;
-              font-weight: bold;
-              font-size: 70px;
-              text-align: center;
-          }
-
-      </style>
-      <script>
-          let slideIndex = 0;
-          currentSlide(slideIndex);
-
-          function changeSlideBy(n) {
-              currentSlide(slideIndex += n);
-          }
-
-          function currentSlide(n) {
-              let gallery = document.getElementsByClassName("gallery");
-              let dots = document.getElementsByClassName("dot");
-              slideIndex = n < 0 ? gallery.length - 1 : n % gallery.length;
-
-              for (let i = 0; i < gallery.length; i++) {
-                  gallery[i].style.display = "none";
-              }
-
-              for (let j = 0; j < dots.length; j++) {
-                  dots[j].className = dots[j].className.replace(" active", "");
-              }
-
-              gallery[slideIndex].style.display = "block";
-              dots[slideIndex].className += " active";
-          }
-      </script>
-  </div>
-
-  <div id="careersCover2">
-    <img class="cover-img" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=">
-  </div>
-
-  <div id="body2">
-    <div id="join">
-      <h2>Join the</h2>
-      <h2>change.</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id pretium tortor. Donec et dui elementum, venenatis nisi ornare, dictum nibh. Quisque id ipsum vehicula, ullamcorper turpis vitae, dapibus erat. Maecenas ultrices, elit non iaculisu, fac</p>
-      <a href="currentJobs.html" class="btn">Explore all jobs</a>
+  <div id="careersCover">
+    <div id="coverMessage">
+      <h1>Join the change</h1>
+      <h2>Some catchy phrase about how we're always looking for new people all the time</h2>
+      <button class="jobsBtn">Explore all jobs</button>
     </div>
+  </div>
 
-    <div id="who" class="halfSplitGrid">
-      <div>
-        <img src="https://i.guim.co.uk/img/media/544d280049fb3b73683bd8bf9a1c8b31ef3670d2/0_489_7240_4343/master/7240.jpg?width=465&dpr=1&s=none">
+  <div id="gallery">
+    <div class="gallery-wrap">
+      <div class="item item-1"></div>
+      <div class="item item-2"></div>
+      <div class="item item-3"></div>
+      <div class="item item-4"></div>
+      <div class="item item-5"></div>
+    </div>
+  </div>
+
+  <div id="teamDissect">
+    <div class="halfView">
+      <div class="facet">
+        <h3>Who we are</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut risus nec lacus mollis ultrices id et arcu. Mauris nibh odio, faucibus a ipsum eget, dictum condimentum massa. Vestibulum fermentum porttitor varius. Duis malesuada, nisi ut fermentum tincidunt, nisl elit facilisis purus, at feugiat enim sem ut eros. Praesent aliquam dapibus dui. Sed pellentesque laoreet blandit. Vestibulum ultrices mattis augue finibus tempor. Duis porta laoreet mauris</p>
       </div>
-      <div id="who-text">
-        <h2>Who</h2>
-        <h2>we</h2>
-        <h2>are.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id pretium tortor. Donec et dui elementum, venenatis nisi ornare, dictum nibh. Quisque id ipsum vehicula, ullamcorper turpis vitae, dapibus erat. Maecenas ultrices, elit non iaculis iaculis, libero neque malesuada ipsum, non maximus arcu nibh in ipsum. Aliquam erat volutpat. Phasellus at neque sed sapien tristique blandit. Aenean sit amet ultricies velit. In ac euismod massa, ut lacinia neque. Etiam ipsum tellus, finibus id mi ut, placerat egestas neque. Vivamus vestibulum, leo eget porttitor vulputate, urna justo blandit mi, fermentum convallis nunc neque ut neque. Donec gravida aliquam sapien, sed porta ante maximus nec. Nulla tempus neque ullamcorper, feugiat tortor eu, fac</p>
+      <div class="facet">
+        <h3>Where we belong</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut risus nec lacus mollis ultrices id et arcu. Mauris nibh odio, faucibus a ipsum eget, dictum condimentum massa. Vestibulum fermentum porttitor varius. Duis malesuada, nisi ut fermentum tincidunt, nisl elit facilisis purus, at feugiat enim sem ut eros. Praesent aliquam dapibus dui. Sed pellentesque laoreet blandit. Vestibulum ultrices mattis augue finibus tempor. Duis porta laoreet mauris</p>
+      </div>
+      <div class="facet">
+        <h3>Our mission</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut risus nec lacus mollis ultrices id et arcu. Mauris nibh odio, faucibus a ipsum eget, dictum condimentum massa. Vestibulum fermentum porttitor varius. Duis malesuada, nisi ut fermentum tincidunt, nisl elit facilisis purus, at feugiat enim sem ut eros. Praesent aliquam dapibus dui. Sed pellentesque laoreet blandit. Vestibulum ultrices mattis augue finibus tempor. Duis porta laoreet mauris</p>
       </div>
     </div>
+  </div>
 
-    <div id="values">
-      <h2>Our</h2>
-      <h2>values.</h2>
+  <div id="values">
+      <h1>Our Values</h1>
       <div class="fourthSplitGrid">
         <div class="value">
           <img class="value-img" src="https://careers.recruiteecdn.com/image/upload/q_auto,f_auto,w_1920,c_limit/production/images/NdA/iJtxF4-3CnjB.png">
@@ -185,34 +95,192 @@
       </div>
     </div>
 
-    <div id="careerCarousel">
 
-    </div>
-
-    <div id="benefits" class="halfSplitGrid">
+  <div id="benefits">
+      <h1>A company that supports you</h1>
+      <div id="basics" class="benefitTemplateGrid">
+        <div class="benefitHeader">
+          <h2>The Basics</h2>
+        </div>
         <div>
-          <h1>What we offer</h1>
-          <p>Lorem ipsum dolor sit amet, lor sit t odio in, congue pharetra tortor. Ut augue dolor, lobortis ut aliquet sit amet, aliquet mollis lorem. Aenean fringilla, sapien et aliquet efficitur, neque augue vehicula dolor, quis pulvinar tortor lectusm ac urna id mauris maximus volutpat. Morbi eget aliquet odio.</p>
-          <a>Learn more</a>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#202020" fill-rule="evenodd" d="M5.826 1.466a.498.498 0 0 0-.093.046 9.497 9.497 0 0 0-4.51 12.123 9.5 9.5 0 0 0 11.893 5.34.504.504 0 0 0 .1-.036 9.5 9.5 0 1 0-7.39-17.473ZM17.21 5.5A8.496 8.496 0 0 0 10 1.5c-1.219 0-2.41.262-3.5.754V3.5a2 2 0 0 0 2 2H9A2.5 2.5 0 0 1 11.5 8a1.5 1.5 0 1 0 3 0A2.5 2.5 0 0 1 17 5.5h.211Zm.535 1H17A1.5 1.5 0 0 0 15.5 8a2.5 2.5 0 0 1-5 0A1.5 1.5 0 0 0 9 6.5h-.5a3 3 0 0 1-3-3v-.711A8.498 8.498 0 0 0 1.633 8.5H3A2.5 2.5 0 0 1 5.5 11v1A1.5 1.5 0 0 0 7 13.5 2.5 2.5 0 0 1 9.5 16v2.485a8.498 8.498 0 0 0 3-.361V16a2.5 2.5 0 0 1 2.5-2.5h2.746a8.501 8.501 0 0 0 0-7Zm-.535 8H15a1.5 1.5 0 0 0-1.5 1.5v1.746a8.5 8.5 0 0 0 3.711-3.246ZM8.5 18.367V16A1.5 1.5 0 0 0 7 14.5 2.5 2.5 0 0 1 4.5 12v-1A1.5 1.5 0 0 0 3 9.5H1.514A8.5 8.5 0 0 0 8.5 18.367Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Work from anywhere</h4>
+              <p>Doisters can work from anywhere in the world. We never place restrictions on locations.</p>
+            </div>
+          </div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#202020" fill-rule="evenodd" d="M5.826 1.466a.498.498 0 0 0-.093.046 9.497 9.497 0 0 0-4.51 12.123 9.5 9.5 0 0 0 11.893 5.34.504.504 0 0 0 .1-.036 9.5 9.5 0 1 0-7.39-17.473ZM17.21 5.5A8.496 8.496 0 0 0 10 1.5c-1.219 0-2.41.262-3.5.754V3.5a2 2 0 0 0 2 2H9A2.5 2.5 0 0 1 11.5 8a1.5 1.5 0 1 0 3 0A2.5 2.5 0 0 1 17 5.5h.211Zm.535 1H17A1.5 1.5 0 0 0 15.5 8a2.5 2.5 0 0 1-5 0A1.5 1.5 0 0 0 9 6.5h-.5a3 3 0 0 1-3-3v-.711A8.498 8.498 0 0 0 1.633 8.5H3A2.5 2.5 0 0 1 5.5 11v1A1.5 1.5 0 0 0 7 13.5 2.5 2.5 0 0 1 9.5 16v2.485a8.498 8.498 0 0 0 3-.361V16a2.5 2.5 0 0 1 2.5-2.5h2.746a8.501 8.501 0 0 0 0-7Zm-.535 8H15a1.5 1.5 0 0 0-1.5 1.5v1.746a8.5 8.5 0 0 0 3.711-3.246ZM8.5 18.367V16A1.5 1.5 0 0 0 7 14.5 2.5 2.5 0 0 1 4.5 12v-1A1.5 1.5 0 0 0 3 9.5H1.514A8.5 8.5 0 0 0 8.5 18.367Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Work from anywhere</h4>
+              <p>Doisters can work from anywhere in the world. We never place restrictions on locations.</p>
+            </div>
+          </div>
         </div>
-        <div id="benefit-list">
-          <ul>
-            <li>thing 1</li>
-            <li>thing 2</li>
-            <li>thing 3</li>
-            <li>thing 4</li>
-            <li>thing 5</li>
-          </ul>
+      </div>
+      <div id="professional" class="benefitTemplateGrid">
+        <div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#202020" fill-rule="evenodd" d="M5.826 1.466a.498.498 0 0 0-.093.046 9.497 9.497 0 0 0-4.51 12.123 9.5 9.5 0 0 0 11.893 5.34.504.504 0 0 0 .1-.036 9.5 9.5 0 1 0-7.39-17.473ZM17.21 5.5A8.496 8.496 0 0 0 10 1.5c-1.219 0-2.41.262-3.5.754V3.5a2 2 0 0 0 2 2H9A2.5 2.5 0 0 1 11.5 8a1.5 1.5 0 1 0 3 0A2.5 2.5 0 0 1 17 5.5h.211Zm.535 1H17A1.5 1.5 0 0 0 15.5 8a2.5 2.5 0 0 1-5 0A1.5 1.5 0 0 0 9 6.5h-.5a3 3 0 0 1-3-3v-.711A8.498 8.498 0 0 0 1.633 8.5H3A2.5 2.5 0 0 1 5.5 11v1A1.5 1.5 0 0 0 7 13.5 2.5 2.5 0 0 1 9.5 16v2.485a8.498 8.498 0 0 0 3-.361V16a2.5 2.5 0 0 1 2.5-2.5h2.746a8.501 8.501 0 0 0 0-7Zm-.535 8H15a1.5 1.5 0 0 0-1.5 1.5v1.746a8.5 8.5 0 0 0 3.711-3.246ZM8.5 18.367V16A1.5 1.5 0 0 0 7 14.5 2.5 2.5 0 0 1 4.5 12v-1A1.5 1.5 0 0 0 3 9.5H1.514A8.5 8.5 0 0 0 8.5 18.367Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Work from anywhere</h4>
+              <p>Doisters can work from anywhere in the world. We never place restrictions on locations.</p>
+            </div>
+          </div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#202020" fill-rule="evenodd" d="M5.826 1.466a.498.498 0 0 0-.093.046 9.497 9.497 0 0 0-4.51 12.123 9.5 9.5 0 0 0 11.893 5.34.504.504 0 0 0 .1-.036 9.5 9.5 0 1 0-7.39-17.473ZM17.21 5.5A8.496 8.496 0 0 0 10 1.5c-1.219 0-2.41.262-3.5.754V3.5a2 2 0 0 0 2 2H9A2.5 2.5 0 0 1 11.5 8a1.5 1.5 0 1 0 3 0A2.5 2.5 0 0 1 17 5.5h.211Zm.535 1H17A1.5 1.5 0 0 0 15.5 8a2.5 2.5 0 0 1-5 0A1.5 1.5 0 0 0 9 6.5h-.5a3 3 0 0 1-3-3v-.711A8.498 8.498 0 0 0 1.633 8.5H3A2.5 2.5 0 0 1 5.5 11v1A1.5 1.5 0 0 0 7 13.5 2.5 2.5 0 0 1 9.5 16v2.485a8.498 8.498 0 0 0 3-.361V16a2.5 2.5 0 0 1 2.5-2.5h2.746a8.501 8.501 0 0 0 0-7Zm-.535 8H15a1.5 1.5 0 0 0-1.5 1.5v1.746a8.5 8.5 0 0 0 3.711-3.246ZM8.5 18.367V16A1.5 1.5 0 0 0 7 14.5 2.5 2.5 0 0 1 4.5 12v-1A1.5 1.5 0 0 0 3 9.5H1.514A8.5 8.5 0 0 0 8.5 18.367Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Work from anywhere</h4>
+              <p>Doisters can work from anywhere in the world. We never place restrictions on locations.</p>
+            </div>
+          </div>
         </div>
+        <div class="benefitHeader">
+          <h2>The Basics</h2>
+        </div>
+      </div>
+      <div id="environment" class="benefitTemplateGrid">
+        <div class="benefitHeader">
+          <h2>The Basics</h2>
+        </div>
+        <div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#202020" fill-rule="evenodd" d="M5.826 1.466a.498.498 0 0 0-.093.046 9.497 9.497 0 0 0-4.51 12.123 9.5 9.5 0 0 0 11.893 5.34.504.504 0 0 0 .1-.036 9.5 9.5 0 1 0-7.39-17.473ZM17.21 5.5A8.496 8.496 0 0 0 10 1.5c-1.219 0-2.41.262-3.5.754V3.5a2 2 0 0 0 2 2H9A2.5 2.5 0 0 1 11.5 8a1.5 1.5 0 1 0 3 0A2.5 2.5 0 0 1 17 5.5h.211Zm.535 1H17A1.5 1.5 0 0 0 15.5 8a2.5 2.5 0 0 1-5 0A1.5 1.5 0 0 0 9 6.5h-.5a3 3 0 0 1-3-3v-.711A8.498 8.498 0 0 0 1.633 8.5H3A2.5 2.5 0 0 1 5.5 11v1A1.5 1.5 0 0 0 7 13.5 2.5 2.5 0 0 1 9.5 16v2.485a8.498 8.498 0 0 0 3-.361V16a2.5 2.5 0 0 1 2.5-2.5h2.746a8.501 8.501 0 0 0 0-7Zm-.535 8H15a1.5 1.5 0 0 0-1.5 1.5v1.746a8.5 8.5 0 0 0 3.711-3.246ZM8.5 18.367V16A1.5 1.5 0 0 0 7 14.5 2.5 2.5 0 0 1 4.5 12v-1A1.5 1.5 0 0 0 3 9.5H1.514A8.5 8.5 0 0 0 8.5 18.367Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Work from anywhere</h4>
+              <p>Doisters can work from anywhere in the world. We never place restrictions on locations.</p>
+            </div>
+          </div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#202020" fill-rule="evenodd" d="M5.826 1.466a.498.498 0 0 0-.093.046 9.497 9.497 0 0 0-4.51 12.123 9.5 9.5 0 0 0 11.893 5.34.504.504 0 0 0 .1-.036 9.5 9.5 0 1 0-7.39-17.473ZM17.21 5.5A8.496 8.496 0 0 0 10 1.5c-1.219 0-2.41.262-3.5.754V3.5a2 2 0 0 0 2 2H9A2.5 2.5 0 0 1 11.5 8a1.5 1.5 0 1 0 3 0A2.5 2.5 0 0 1 17 5.5h.211Zm.535 1H17A1.5 1.5 0 0 0 15.5 8a2.5 2.5 0 0 1-5 0A1.5 1.5 0 0 0 9 6.5h-.5a3 3 0 0 1-3-3v-.711A8.498 8.498 0 0 0 1.633 8.5H3A2.5 2.5 0 0 1 5.5 11v1A1.5 1.5 0 0 0 7 13.5 2.5 2.5 0 0 1 9.5 16v2.485a8.498 8.498 0 0 0 3-.361V16a2.5 2.5 0 0 1 2.5-2.5h2.746a8.501 8.501 0 0 0 0-7Zm-.535 8H15a1.5 1.5 0 0 0-1.5 1.5v1.746a8.5 8.5 0 0 0 3.711-3.246ZM8.5 18.367V16A1.5 1.5 0 0 0 7 14.5 2.5 2.5 0 0 1 4.5 12v-1A1.5 1.5 0 0 0 3 9.5H1.514A8.5 8.5 0 0 0 8.5 18.367Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Work from anywhere</h4>
+              <p>Doisters can work from anywhere in the world. We never place restrictions on locations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="health" class="benefitTemplateGrid">
+        <div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#202020" fill-rule="evenodd" d="M5.826 1.466a.498.498 0 0 0-.093.046 9.497 9.497 0 0 0-4.51 12.123 9.5 9.5 0 0 0 11.893 5.34.504.504 0 0 0 .1-.036 9.5 9.5 0 1 0-7.39-17.473ZM17.21 5.5A8.496 8.496 0 0 0 10 1.5c-1.219 0-2.41.262-3.5.754V3.5a2 2 0 0 0 2 2H9A2.5 2.5 0 0 1 11.5 8a1.5 1.5 0 1 0 3 0A2.5 2.5 0 0 1 17 5.5h.211Zm.535 1H17A1.5 1.5 0 0 0 15.5 8a2.5 2.5 0 0 1-5 0A1.5 1.5 0 0 0 9 6.5h-.5a3 3 0 0 1-3-3v-.711A8.498 8.498 0 0 0 1.633 8.5H3A2.5 2.5 0 0 1 5.5 11v1A1.5 1.5 0 0 0 7 13.5 2.5 2.5 0 0 1 9.5 16v2.485a8.498 8.498 0 0 0 3-.361V16a2.5 2.5 0 0 1 2.5-2.5h2.746a8.501 8.501 0 0 0 0-7Zm-.535 8H15a1.5 1.5 0 0 0-1.5 1.5v1.746a8.5 8.5 0 0 0 3.711-3.246ZM8.5 18.367V16A1.5 1.5 0 0 0 7 14.5 2.5 2.5 0 0 1 4.5 12v-1A1.5 1.5 0 0 0 3 9.5H1.514A8.5 8.5 0 0 0 8.5 18.367Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Work from anywhere</h4>
+              <p>Doisters can work from anywhere in the world. We never place restrictions on locations.</p>
+            </div>
+          </div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#202020" fill-rule="evenodd" d="M5.826 1.466a.498.498 0 0 0-.093.046 9.497 9.497 0 0 0-4.51 12.123 9.5 9.5 0 0 0 11.893 5.34.504.504 0 0 0 .1-.036 9.5 9.5 0 1 0-7.39-17.473ZM17.21 5.5A8.496 8.496 0 0 0 10 1.5c-1.219 0-2.41.262-3.5.754V3.5a2 2 0 0 0 2 2H9A2.5 2.5 0 0 1 11.5 8a1.5 1.5 0 1 0 3 0A2.5 2.5 0 0 1 17 5.5h.211Zm.535 1H17A1.5 1.5 0 0 0 15.5 8a2.5 2.5 0 0 1-5 0A1.5 1.5 0 0 0 9 6.5h-.5a3 3 0 0 1-3-3v-.711A8.498 8.498 0 0 0 1.633 8.5H3A2.5 2.5 0 0 1 5.5 11v1A1.5 1.5 0 0 0 7 13.5 2.5 2.5 0 0 1 9.5 16v2.485a8.498 8.498 0 0 0 3-.361V16a2.5 2.5 0 0 1 2.5-2.5h2.746a8.501 8.501 0 0 0 0-7Zm-.535 8H15a1.5 1.5 0 0 0-1.5 1.5v1.746a8.5 8.5 0 0 0 3.711-3.246ZM8.5 18.367V16A1.5 1.5 0 0 0 7 14.5 2.5 2.5 0 0 1 4.5 12v-1A1.5 1.5 0 0 0 3 9.5H1.514A8.5 8.5 0 0 0 8.5 18.367Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Work from anywhere</h4>
+              <p>Doisters can work from anywhere in the world. We never place restrictions on locations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="benefitHeader">
+          <h2>The Basics</h2>
+        </div>
+      </div>
     </div>
 
+  <div id="collage">
+      <img src="media/collage.png">
+    </div>
 
-  </div>
+  <div id="nextSteps">
+      <h3>The Hiring Process</h3>
+      <div id="process">
+        <div class="step">
+          <div class="stepHeader">
+            <h5>Step 1</h5>
+            <img class="stepImg" src="https://www.lifeatspotify.com/usp/icon-pen.svg">
+          </div>
+          <div class="stepDescrip">
+            <h4>Apply</h4>
+            <p>No cupcakes needed. Or rap CVs or resumes either. Simply make it easy for us to see how great you are.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="stepHeader">
+            <h5>Step 2</h5>
+            <img class="stepImg" src="https://www.lifeatspotify.com/usp/icon-pen.svg">
+          </div>
+          <div class="stepDescrip">
+            <h4>Interview</h4>
+            <p>No cupcakes needed. Or rap CVs or resumes either. Simply make it easy for us to see how great you are.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="stepHeader">
+            <h5>Step 3</h5>
+            <img class="stepImg" src="https://www.lifeatspotify.com/usp/icon-pen.svg">
+          </div>
+          <div class="stepDescrip">
+            <h4>Decision</h4>
+            <p>No cupcakes needed. Or rap CVs or resumes either. Simply make it easy for us to see how great you are.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   <script src="scripts/scripts.js"></script>
+
+  <div id="readyApply">
+    <img src="https://www.lifeatspotify.com/icons/icon-footer.svg">
+    <h1>Are you ready?</h1>
+    <p>orem Ipsum is simply dummy text of the petting, remaining essentially unchanged.</p>
+    <button class="jobsBtn">Open Positions</button>
+  </div>
 
 </body>
 
 <footer>
+  <div id="footerGrid">
+    <div>
+      <a href="#" id="logo"><img src="media/logo.png" style="padding:10px; width:100px; height:100px;"></a>
+      <p>orem Ipsum is simply dummy text of the petting, remaining essentially unchanged.</p>
+      <div id="socials">
+        <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div></div>
+    <div></div>
+    <div id='projectLinks'>
+      <h3>Solutions</h3>
+      <a href="projects.html">Projects</a>
+      <a href="projects.html">Products</a>
+      <a href="projects.html">Service</a>
+    </div>
+    <div id="companyLinks">
+      <h3>Company</h3>
+      <a href="projects.html">About</a>
+      <a href="projects.html">Team</a>
+      <a href="projects.html">Careers</a>
+    </div>
+  </div>
+  <div id="copyright">
+    <p>Copyright 2023 The Green Place All Rights Reserved.</p>
+  </div>
 </footer>
 </html>

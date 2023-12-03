@@ -42,3 +42,8 @@ dropContainer2.addEventListener("drop", e => {
   dropContainer2.classList.remove("drag-active");
   fileInput2.files = e.dataTransfer.files;
 });
+
+
+function submitJob(){
+  location.href="congrats.html";
+}

@@ -27,9 +27,7 @@ li {
 a {
   text-decoration: none;
 }
-img{
-  z-index: -100;
-}
+
 .left{
   text-align:left;
 }
@@ -122,4 +120,57 @@ img{
     grid-template-rows: 100%;
     padding: 0% 10%;
     grid-column-gap: 5%;
+}
+#footerGrid{
+  padding:2% 2%;
+  display: grid;
+  grid-template-columns: 25% 10% 16% 16% 16%;
+  grid-column-gap: 5%
+}
+#copyright{
+  padding:1% 2%;
+  border-top: 1px solid black;
+}
+#copyright p{
+  margin:0;
+}
+#socials {
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16%;
+  grid-column-gap: 1%
+}
+#socials a {
+  width:40px;
+  height:40px;
+  color:black;
+  border-radius:10px;
+  text-align:center;
+  text-decoration:none;
+  position: relative;
+  display: inline-block;
+  margin:0 2px;
+}
+#socials i{
+  font-size: 20px;
+  line-height: 40px;
+}
+#socials a:hover {
+  background: #ebebeb;
+}
+#projectLinks a, #companyLinks a
+{
+  display: block;
+  font-size: 16px;
+  padding:1% 2%;
+  margin:1%;
+  color:black;
+  margin-left: 0;
+  padding-left: 0;
+}
+#projectLinks a:hover, #companyLinks a:hover{
+  color: pink;
+}
+#projectLinks h3, #companyLinks h3
+{
+  font-size: 20px;
 }

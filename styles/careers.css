@@ -1,29 +1,106 @@
-.cover-img{
+#careersCover{
   width:100%;
-  height:400px;
-  object-fit: cover;
+  background-image: url("https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=");
+  background-size: cover;
 }
-#join{
-  text-align:center;
-  padding:5% 0%;
-  border: 10px solid #93CD01;
-  margin-bottom:5%;
-  border-radius: 20px;
+#coverMessage
+{
+  padding:15%;
 }
-#who{
-  padding: 5% 0%;
-  background: #93CD01;
-  margin-bottom:5%;
-  margin-left: -4.25%;
-  margin-right: -4.25%;
+#coverMessage h1
+{
+  font-size: 100px;
+  color:black;
+  font-weight: bolder;
 }
-#who img{
-  margin:0% 15%;
+#coverMessage h2{
+  color:black;
 }
-#who-text{
-  margin:0% 15%;
+.jobsBtn {
+  background-color: black;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+.jobsBtn:hover {
+  background-color: white;
+  color:black;
+}
+.jobsBtn:active {
+  box-shadow: #422800 1px 1px 0 0;
+  transform: translate(2px, 2px);
+}
+#gallery {
+  padding: 75px 0;
+  margin: 0 0;
+  width: 100%;
+}
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+.item:hover {
+  flex: 7;
+}
+.item-1 {
+  background-image: url("https://images.unsplash.com/photo-1499198116522-4a6235013d63?auto=format&fit=crop&w=1233&q=80");
+}
+.item-2 {
+  background-image: url("https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80");
+}
+.item-3 {
+  background-image: url("https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format&fit=crop&w=1234&q=80");
+}
+.item-4 {
+  background-image: url("https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80");
+}
+.item-5 {
+  background-image: url("https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80");
+}
+#teamDissect{
+  background: url('../media/teamDissect2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
+  overflow: hidden;
+}
+.halfView{
+  padding:5%;
+  padding-left:60%;
+}
+.halfView h3{
+  font-weight: bolder;
+}
+#values{
+  margin:4% auto;
+  text-align: center;
+}
+#values h1, #benefits h1{
+  font-size: 45px;
+  font-weight: bolder;
+  text-align:center;
+}
 #values .fourthSplitGrid{
   padding-top:2%;
 }
@@ -34,19 +111,95 @@
   grid-template-rows: 100%;
   padding: 0% 10%;
   grid-column-gap:5%;
-}
-#values{
-  text-align: center;
-  margin-bottom:5%;
+  margin-top:2%;
 }
 .value-img{
   width:200px;
 }
-
-#benefits{
-  margin-bottom:5%;
+.value-text{
+  margin:10% auto;
+  font-size: 20px;
 }
-#benefit-list{
-  margin:auto;
-  margin-left:10%;
+/*BENEFITS*/
+#benefits
+{
+  padding:5%;
+  padding-top:0%;
+}
+.benefitTemplateGrid
+{
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  grid-column-gap: 5%;
+  padding:5% 10%;
+}
+.benefitSplitGrid{
+  display: grid;
+  grid-template-columns: 5% 80%;
+  grid-column-gap: 1%;
+}
+.benefitHeader{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#basics, #professional, #environment, #health{
+  background: pink;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+#collage{
+  width:100%;
+}
+#collage img{
+  width:100%;
+}
+#nextSteps{
+  margin:5%;
+  margin-bottom:5%;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+#nextSteps h3{
+  font-size: 40px;
+  margin-bottom:0%;
+  text-align: center;
+}
+#process{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 5%;
+  padding:5%;
+  padding-top:2%;
+  padding-bottom:0%;
+}
+.step{
+  background-color: pink;
+  padding:5%;
+  border-radius: 20px;
+  padding-bottom:10%;
+  padding-top:8%;
+}
+.step h4{
+  text-align: left;
+  font-size: 35px;
+  font-weight: normal;
+  margin-bottom: 0%;
+}
+.stepHeader{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin:auto 2%;
+}
+.stepDescrip{
+  margin:auto 2%;
+}
+#readyApply{
+  text-align: center;
+  padding:5% 20%;
+  background:pink;
+}
+#readyApply p{
+  margin-bottom:3%;
 }
