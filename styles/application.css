@@ -1,7 +1,12 @@
 #jobHeader{
   margin:5%;
-  padding-top:5%;
+  padding-top:0%;
   text-align: center;
+  margin-bottom:2%;
+}
+#jobHeader h1{
+  font-size:70px;
+  margin-bottom: 10px;
 }
 .jobMeta{
   display: grid;
