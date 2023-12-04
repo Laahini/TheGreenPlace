@@ -19,6 +19,7 @@
     </a>
     <div class="header-menu">
     	<a href="index.html" class="menu-link2">Home</a>
+      <a href="about.html" class="menu-link2">About</a>
       <a href="projects.html" class="menu-link2">Projects</a>
     	<a href="careers.html" class="menu-link2">Careers</a>
     	<a href="contact.html" class="menu-link2">Contact</a>
@@ -37,6 +38,7 @@
     <aside class="sidebar">
       <ul class="menu">
         <li><a class="menu-link" href="index.html">Home</a></li>
+        <li><a class="menu-link" href="about.html">About</a></li>
         <li><a class="menu-link" href="projects.html">Projects</a></li>
         <li><a class="menu-link" href="careers.html">Careers</a></li>
         <li><a class="menu-link" href="contact.html">Contact</a></li>
@@ -45,24 +47,152 @@
   </nav>
 
   <div class="video-banner">
-  <video width="100%" height="" muted="”muted”preload=&quot;yes&quot;" autoplay="autoplay" loop="loop">
-    <source src="media/backdrop.mp4">
-  </video>
-  <div class="overlay">
-    <h1>BETTERING OUTCOMES</h1>
-    <h3>FOR OUR CLIENTS, COLLEAGUES, AND COMMUNITIES.</h3>
-    <br>
-    <h5>Our combination of forensics, engineering, environmental, and project advisory services leads to just, safe, sustainable, and community-enhancing outcomes that have a positive impact on society.</h5>
+    <video width="100%" height="" muted="”muted”preload=&quot;yes&quot;" autoplay="autoplay" loop="loop">
+      <source src="media/backdrop.mp4">
+    </video>
+    <div class="overlay">
+      <h1>BIG TEXT HERE</h1>
+      <h3>FOR OUR CLIENTS, COLLEAGUES, AND COMMUNITIES.</h3>
+      <br>
+      <h5>Our combination of forensics, engineering, environmental, and project advisory services leads to just, safe, sustainable, and community-enhancing outcomes that have a positive impact on society.</h5>
+    </div>
   </div>
-</div>
 
-  <div id="body2">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id pretium tortor. Donec et dui elementum, venenatis nisi ornare, dictum nibh. Quisque id ipsum vehicula, ullamcorper turpis vitae, dapibus erat. Maecenas ultrices, elit non iaculis iaculis, libero neque malesuada ipsum, non maximus arcu nibh in ipsum. Aliquam erat volutpat. Phasellus at neque sed sapien tristique blandit. Aenean sit amet ultricies velit. In ac euismod massa, ut lacinia neque. Etiam ipsum tellus, finibus id mi ut, placerat egestas neque. Vivamus vestibulum, leo eget porttitor vulputate, urna justo blandit mi, fermentum convallis nunc neque ut neque. Donec gravida aliquam sapien, sed porta ante maximus nec. Nulla tempus neque ullamcorper, feugiat tortor eu, facilisis lectus. Duis quis vestibulum dolor.
-
-Mauris eget scelerisque lacus. Quisque ullamcorper ex ac orci semper aliquet. Duis nec posuere metus. Pellentesque vel varius nisl, ut rhoncus risus. Fusce ut odio sed quam elementum finibus. Integer nec sapien finibus, posuere risus at, commodo sem. Maecenas cursus sodales consectetur. Fusce ornare dignissim felis, eget rhoncus risus hendrerit a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis gravida purus ut congue mollis.
-    </p>
+  <div id="missionStatement">
+    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id pretium tortor. Donec et dui elementum, venenatis nisi ornare, dictum nibh. Quisque id ipsum veh</h3>
   </div>
+
+  <div id="mediaGrid">
+    <div>
+      <video width="100%" height="" muted="”muted”preload=&quot;yes&quot;" autoplay="autoplay" loop="loop"><source src="media/vid2.mp4"></video>
+    </div>
+    <div id="callToAction">
+      <div>
+        <h4>Join us in changing the world into a better place.</h4>
+        <button class="universalBtn">Work with Us</button>
+      </div>
+    </div>
+    <div>
+      <video width="100%" height="" muted="”muted”preload=&quot;yes&quot;" autoplay="autoplay" loop="loop"><source src="media/vid3.mp4"></video>
+    </div>
+  </div>
+
+  <div id="partnerships">
+    <h5>Trusted by</h5>
+    <main>
+    	<div class="wrapper">
+        <ul class="items">
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-08/logo-carousel-whole-foods_0.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-08/logo-carousel-whole-foods_0.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-08/logo-carousel-whole-foods_0.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-08/logo-carousel-whole-foods_0.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-08/logo-carousel-whole-foods_0.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-08/logo-carousel-whole-foods_0.png"></li>
+        </ul>
+    	</div>
+    </main>
+    <script>
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    const slider = document.querySelector(".items");
+
+    const end = () => {
+    	isDown = false;
+    	slider.classList.remove("active");
+    };
+
+    const start = (e) => {
+    	isDown = true;
+    	slider.classList.add("active");
+    	startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+    	scrollLeft = slider.scrollLeft;
+    };
+
+    const move = (e) => {
+    	if (!isDown) return;
+
+    	e.preventDefault();
+    	const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+    	const dist = x - startX;
+    	slider.scrollLeft = scrollLeft - dist;
+    };
+
+    (() => {
+    	slider.addEventListener("mousedown", start);
+    	slider.addEventListener("touchstart", start);
+
+    	slider.addEventListener("mousemove", move);
+    	slider.addEventListener("touchmove", move);
+
+    	slider.addEventListener("mouseleave", end);
+    	slider.addEventListener("mouseup", end);
+    	slider.addEventListener("touchend", end);
+    })();
+
+    </script>
+
+  </div>
+
+  <div id="commitments">
+    <div id="commitDescrip">
+      <h5>Our Commitments</h5>
+      <div class="commitHeader"><h1>We are</h1><span>The Green Place</span></div><br>
+      <p>Optera was founded in 2006, originally operating as a boutique corporate sustainability consulting firm called Point380. Our founders were key contributors to ground-breaking publications – Winning the Oil Endgame, Reinventing Fire, and The 3% Solution – that informed the foundations of corporate climate action. These studies culminated in a report commissioned to launch the influential We Mean Business Coalition called The Climate Has Changed.<br><br>Around the signing of the Paris Agreement in 2016, it had become clear that consulting alone could not move the needle on corporate...</p>
+    </div>
+    <div>
+      <img src="https://images.pexels.com/photos/3850512/pexels-photo-3850512.jpeg?auto=compress&cs=tinysrgb&w=800">
+    </div>
+  </div>
+
+  <div id="joinUsFooter">
+    <div>
+      <h3>Join us.</h3>
+      <p>We’re stronger together. Join our community of friends and families committed to the health of the next seven generations. Product news, special offers, ways to make an impact, and so much more.</p>
+    </div>
+    <div id="subForm">
+      <br>
+      <div class="questionGrid" id="email">
+        <span>
+          <label for="name" class="text-small-uppercase">Your Email</label>
+          <input class="text-body" id="username" name="name" type="text" required>
+        </span>
+      </div>
+      <div class="questionGrid" id="submit">
+        <h2></h2>
+        <span>
+          <button class="contactSubmitBtn">Subscribe Now</button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script>
+    var inputs = document.querySelectorAll("input[type=text], input[type=email]");
+    for (i = 0; i < inputs.length; i++) {
+      var inputEl = inputs[i];
+      if (inputEl.value.trim() !== "") {
+        inputEl.parentNode.classList.add("input--filled");
+      }
+      inputEl.addEventListener("focus", onFocus);
+      inputEl.addEventListener("blur", onBlur);
+    }
+
+    function onFocus(ev) {
+      ev.target.parentNode.classList.add("inputs--filled");
+    }
+
+    function onBlur(ev) {
+      if (ev.target.value.trim() === "") {
+        ev.target.parentNode.classList.remove("inputs--filled");
+      } else if (ev.target.checkValidity() == false) {
+        ev.target.parentNode.classList.add("inputs--invalid");
+        ev.target.addEventListener("input", liveValidation);
+      } else if (ev.target.checkValidity() == true) {
+        ev.target.parentNode.classList.remove("inputs--invalid");
+        ev.target.addEventListener("input", liveValidation);
+      }
+    }
+  </script>
 
 </body>
 
@@ -88,8 +218,8 @@ Mauris eget scelerisque lacus. Quisque ullamcorper ex ac orci semper aliquet. Du
     </div>
     <div id="companyLinks">
       <h3>Company</h3>
-      <a href="projects.html">About</a>
-      <a href="projects.html">Team</a>
+      <a href="about.html">About</a>
+      <a href="about.html">Team</a>
       <a href="careers.html">Careers</a>
     </div>
   </div>
