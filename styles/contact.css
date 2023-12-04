@@ -97,3 +97,25 @@ label {
   box-shadow: #422800 1px 1px 0 0;
   transform: translate(2px, 2px);
 }
+#otherContact{
+  padding:5% 10%;
+  background: pink;
+}
+.otherGrid{
+  display: grid;
+  grid-template-columns: 25% 25% 30%;
+  grid-column-gap: 10%;
+  margin-bottom: 5%;
+}
+.otherGrid h3{
+  border-bottom: 1px solid black;
+  padding-bottom: 5%;
+}
+.otherGrid a{
+  color:black;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.otherGrid a:hover{
+  text-decoration: underline;
+}
