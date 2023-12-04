@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/styles.css" rel="stylesheet">
+  <link rel="icon" href="media/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="styles/contact.css" rel="stylesheet">
+
+  <title>Contact | The Green Place</title>
+</head>
+<body>
+  <!--NAV-->
+  <div id="nav" class="header">
+    <a class="menu-icon" href="index.html">
+      <img id="logo" src="media/logo.png">
+    </a>
+    <div class="header-menu">
+    	<a href="index.html" class="menu-link2">Home</a>
+      <a href="projects.html" class="menu-link2">Projects</a>
+    	<a href="careers.html" class="menu-link2">Careers</a>
+    	<a href="contact.html" class="menu-link2">Contact</a>
+    </div>
+  </div>
+
+  <nav id="mobileNav">
+    <a href="index.html" id="logo"><img src="media/logo.png"></a>
+    <input type="checkbox" id="toggle" class="input-toggler">
+    <label for="toggle" class="menu-toggler">
+      <span class="menu-toggler-line" style="margin-top:5px;"></span>
+      <span class="menu-toggler-line"></span>
+      <span class="menu-toggler-line"></span>
+    </label>
+
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a class="menu-link" href="index.html">Home</a></li>
+        <li><a class="menu-link" href="projects.html">Projects</a></li>
+        <li><a class="menu-link" href="careers.html">Careers</a></li>
+        <li><a class="menu-link" href="contact.html">Contact</a></li>
+      </ul>
+    </aside>
+  </nav>
+
+
+  <div id="contactHeader">
+    <div><h1>Contact Us</h1></div>
+    <div><p>To learn more about TheGreenPlace's initiatives and projects, contact us for a no-obligation consult with our team.</p></div>
+  </div>
+
+  <div id='contactForm'>
+    <div class="questionGrid" id="name">
+      <h2>Name*</h2>
+      <span>
+        <label for="name" class="text-small-uppercase">Full Name</label>
+        <input class="text-body" id="username" name="name" type="text" required>
+      </span>
+    </div>
+    <div class="questionGrid" id="email">
+      <h2>Email*</h2>
+      <span>
+        <label for="name" class="text-small-uppercase">yourname@company.com</label>
+        <input class="text-body" id="username" name="name" type="text" required>
+      </span>
+    </div>
+    <div class="questionGrid" id="company">
+      <h2>Company</h2>
+      <span>
+        <label for="name" class="text-small-uppercase">Where do you work?</label>
+        <input class="text-body" id="username" name="name" type="text" required>
+      </span>
+    </div>
+    <div class="questionGrid" id="message">
+      <h2>Message*</h2>
+      <span>
+        <label for="name" class="text-small-uppercase">How can we help you?</label>
+        <input class="text-body" id="username" name="name" type="text" required>
+      </span>
+    </div>
+    <div class="questionGrid" id="submit">
+      <h2></h2>
+      <span>
+        <button class="contactSubmitBtn">Submit message</button>
+      </span>
+    </div>
+  </div>
+  <script>
+    var inputs = document.querySelectorAll("input[type=text], input[type=email]");
+    for (i = 0; i < inputs.length; i++) {
+      var inputEl = inputs[i];
+      if (inputEl.value.trim() !== "") {
+        inputEl.parentNode.classList.add("input--filled");
+      }
+      inputEl.addEventListener("focus", onFocus);
+      inputEl.addEventListener("blur", onBlur);
+    }
+
+    function onFocus(ev) {
+      ev.target.parentNode.classList.add("inputs--filled");
+    }
+
+    function onBlur(ev) {
+      if (ev.target.value.trim() === "") {
+        ev.target.parentNode.classList.remove("inputs--filled");
+      } else if (ev.target.checkValidity() == false) {
+        ev.target.parentNode.classList.add("inputs--invalid");
+        ev.target.addEventListener("input", liveValidation);
+      } else if (ev.target.checkValidity() == true) {
+        ev.target.parentNode.classList.remove("inputs--invalid");
+        ev.target.addEventListener("input", liveValidation);
+      }
+    }
+  </script>
+
+  <div id="otherContact">
+    
+  </div>
+
+  <script src="scripts/scripts.js"></script>
+</body>
+
+<footer>
+  <div id="footerGrid">
+    <div>
+      <a href="index.html" id="logo"><img src="media/logo.png" style="padding:10px; width:70px; height:70px;"></a>
+      <p>orem Ipsum is simply dummy text of the petting, remaining essentially unchanged.</p>
+      <div id="socials">
+        <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div></div>
+    <div></div>
+    <div id='projectLinks'>
+      <h3>Solutions</h3>
+      <a href="projects.html">Projects</a>
+      <a href="projects.html">Products</a>
+      <a href="projects.html">Service</a>
+    </div>
+    <div id="companyLinks">
+      <h3>Company</h3>
+      <a href="projects.html">About</a>
+      <a href="projects.html">Team</a>
+      <a href="careers.html">Careers</a>
+    </div>
+  </div>
+  <div id="copyright">
+    <p>Copyright 2023 The Green Place All Rights Reserved.</p>
+  </div>
+</footer>
+</html>

@@ -63,19 +63,19 @@
   flex: 7;
 }
 .item-1 {
-  background-image: url("https://images.unsplash.com/photo-1499198116522-4a6235013d63?auto=format&fit=crop&w=1233&q=80");
+  background-image: url("https://images.pexels.com/photos/414807/pexels-photo-414807.jpeg?auto=compress&cs=tinysrgb&w=800");
 }
 .item-2 {
-  background-image: url("https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80");
+  background-image: url("https://images.pexels.com/photos/9893729/pexels-photo-9893729.jpeg?auto=compress&cs=tinysrgb&w=800");
 }
 .item-3 {
-  background-image: url("https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format&fit=crop&w=1234&q=80");
+  background-image: url("https://images.pexels.com/photos/1116304/pexels-photo-1116304.jpeg?auto=compress&cs=tinysrgb&w=800");
 }
 .item-4 {
-  background-image: url("https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80");
+  background-image: url("https://images.pexels.com/photos/1068595/pexels-photo-1068595.jpeg?auto=compress&cs=tinysrgb&w=800");
 }
 .item-5 {
-  background-image: url("https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80");
+  background-image: url("https://images.pexels.com/photos/4833957/pexels-photo-4833957.jpeg?auto=compress&cs=tinysrgb&w=800");
 }
 #teamDissect{
   background: url('../media/teamDissect2.png');

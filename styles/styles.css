@@ -102,7 +102,8 @@ a {
   padding:2% 2%;
   display: grid;
   grid-template-columns: 25% 10% 16% 16% 16%;
-  grid-column-gap: 5%
+  grid-column-gap: 5%;
+  border-top: 1px solid black;
 }
 #copyright{
   padding:1% 2%;
