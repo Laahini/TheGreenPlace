@@ -19,8 +19,20 @@
 </head>
 <body>
   <!--NAV-->
-  <nav id="nav">
-    <a href="#" id="logo"><img src="media/logo.png" style="padding:10px; width:100px; height:100px;"></a>
+  <div id="nav" class="header">
+    <a class="menu-icon" href="index.html">
+      <img id="logo" src="media/logo.png">
+    </a>
+    <div class="header-menu">
+    	<a href="index.html" class="menu-link2">Home</a>
+      <a href="projects.html" class="menu-link2">Projects</a>
+    	<a href="careers.html" class="menu-link2">Careers</a>
+    	<a href="contact.html" class="menu-link2">Contact</a>
+    </div>
+  </div>
+
+  <nav id="mobileNav">
+    <a href="index.html" id="logo"><img src="media/logo.png"></a>
     <input type="checkbox" id="toggle" class="input-toggler">
     <label for="toggle" class="menu-toggler">
       <span class="menu-toggler-line" style="margin-top:5px;"></span>
@@ -31,9 +43,9 @@
     <aside class="sidebar">
       <ul class="menu">
         <li><a class="menu-link" href="index.html">Home</a></li>
-        <li><a class="menu-link" href="#">Projects</a></li>
+        <li><a class="menu-link" href="projects.html">Projects</a></li>
         <li><a class="menu-link" href="careers.html">Careers</a></li>
-        <li><a class="menu-link" href="#">Contact</a></li>
+        <li><a class="menu-link" href="contact.html">Contact</a></li>
       </ul>
     </aside>
   </nav>

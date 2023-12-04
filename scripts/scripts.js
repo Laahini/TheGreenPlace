@@ -98,3 +98,8 @@ function applyJob(job)
     location.href="../apply/job4.html";
   }
 }
+
+/*OPEN CURRENT JOBS*/
+function openJobs(){
+  location.href="currentJobs.html";
+}
