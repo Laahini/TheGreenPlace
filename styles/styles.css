@@ -107,7 +107,6 @@ a {
   border-top: 1px solid black;
 }
 #copyright{
-
   padding:1% 2%;
   border-top: 1px solid black;
 }
@@ -129,6 +128,12 @@ a {
   position: relative;
   display: inline-block;
   margin:0 2px;
+}
+#logo img{
+  padding:10px;
+  padding-left:0px;
+  width:100%;
+  height:70px;
 }
 #socials i{
   font-size: 20px;
@@ -155,11 +160,29 @@ a {
   font-size: 20px;
 }
 @media only screen and (max-width: 992px) {
+  /*GRIDS*/
+  .halfSplitGrid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 100%;
+      padding: 0% 10%;
+      grid-column-gap: 5%;
+  }
+  #footerGrid{
+    display:none;
+  }
+  #socials{
+    display:none;
+  }
+  .hide{
+    display: none;
+  }
+  /*NAVIGATION*/
   #nav{
     display: none;
   }
   #mobileNav{
-    display:block;
+    display:inline-block;
   }
   .input-toggler {
     display: none;
@@ -167,7 +190,7 @@ a {
   .menu-toggler {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 0px;
     border-radius:50px;
     width: 60px;
     height: 60px;
@@ -187,17 +210,14 @@ a {
     position: relative;
     transition: all 0.4s ease-out;
   }
-
   .input-toggler:checked ~ .menu-toggler .menu-toggler-line {
     top: 5px;
     translatey: 100px;
     transform: rotate(45deg);
   }
-
   .input-toggler:checked ~ .menu-toggler .menu-toggler-line:nth-child(2) {
     display: none;
   }
-
   .input-toggler:checked ~ .menu-toggler .menu-toggler-line:nth-child(3) {
     top: -5px;
     translate-y: 10;
@@ -209,7 +229,7 @@ a {
     height: 100vh;
     width: 100%;
     background: #000;
-    opacity: 0.1;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,7 +237,6 @@ a {
     z-index: 1000000000;
     transition: all 0.4s ease-out;
   }
-
   .menu-link {
     color: white;
     font-size: 10vmin;
@@ -235,6 +254,7 @@ a {
     opacity: 0.99;
   }
   #logo img{
-    width: 10%;
+    width: auto;
+    height:25%;
   }
 }
