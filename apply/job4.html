@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <nav id="mobileNav">
+  <!-- <nav id="mobileNav">
     <a href="index.html" id="logo"><img src="../media/logo.png"></a>
     <input type="checkbox" id="toggle" class="input-toggler">
     <label for="toggle" class="menu-toggler">
@@ -49,7 +49,7 @@
         <li><a class="menu-link" href="../contact.html">Contact</a></li>
       </ul>
     </aside>
-  </nav>
+  </nav> -->
 
   <div id="jobHeader">
     <h1>Sustainable Systems Analyst</h1>
@@ -122,7 +122,7 @@
           <input required='' type='text'>
           <label alt='Current company*' placeholder='Current company*'></label>
         </div>
-          <h4>Your Pronouns</h4>
+          <h4 class="hide">Your Pronouns</h4>
         <div id="pronouns">
           <label class="check">
             <input data-command="" type="checkbox" aria-checked="false">
@@ -259,12 +259,10 @@
         <div class="question">
           <h5>How many hours per week are you available? *</h5>
             <select id="workingHours">
-                <option value="frontend_developer">Front-End Developer</option>
-                <option value="php_developer">PHP Developer</option>
-                <option value="python_developer">Python Developer</option>
-                <option value="rails_developer">Rails Developer</option>
-                <option value="web_designer">Web Designer</option>
-                <option value="wordpress_developer">Wordpress Developer</option>
+              <option value="30hr">30 hours</option>
+              <option value="40hr">40 hours</option>
+              <option value="45hr">45 hours</option>
+              <option value="50hr">50 hours</option>
             </select>
         </div>
         <div class="question">
@@ -280,7 +278,7 @@
       <div>
         <h1>Congrats!</h1>
         <h2>It's time to submit your application.</h2>
-        <button class="submitJobBtn" onclick="submitJob();">Submit application</button>
+        <div class="centered"><button class="submitJobBtn" onclick="submitJob();">Submit application</button></div>
       </div>
       <div><img class="appImg" src="../media/e.jpg"></div>
     </div>

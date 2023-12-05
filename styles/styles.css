@@ -257,4 +257,7 @@ a {
     width: auto;
     height:25%;
   }
+  #copyright p{
+    text-align: center;
+  }
 }

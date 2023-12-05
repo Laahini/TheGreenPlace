@@ -103,3 +103,7 @@ function applyJob(job)
 function openJobs(){
   location.href="currentJobs.html";
 }
+
+function openCareers(){
+  location.href="../careers.html";
+}

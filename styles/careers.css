@@ -216,3 +216,123 @@
 #readyApply img{
   width:100px;
 }
+@media only screen and (max-width: 992px){
+  .item {
+    flex: 1;
+    height: 80%;
+  }
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 35vh;
+  }
+  #gallery{
+    padding-bottom:0%;
+
+  }
+  .fourthSplitGrid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: auto auto;
+    padding: 0% 0%;
+    grid-row-gap:5%;
+    grid-column-gap:0%;
+    margin-top:2%;
+  }
+  .halfView{
+    padding:5%;
+    padding-top:0%;
+    padding-left:5%;
+  }
+  #teamDissect{
+    background: #FFFBF2;
+
+  }
+  .facet{
+    text-align: center;
+    background: #BCD0AB;
+    border-radius:20px;
+    border:1px solid black;
+    padding:2% 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-bottom: 1%;
+  }
+  .value-text{
+    margin:0;
+    padding:10% 5%;
+    font-size: 22px;
+  }
+  .value-img{
+    width:150px;
+  }
+  #values{
+    margin-left:0%;
+    margin-right: 0%;
+    padding-bottom: 5%;
+  }
+  #values .fourthSplitGrid{
+    padding-bottom:2%;
+  }
+  .benefitTemplateGrid
+  {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+    padding:5% 0%;
+  }
+  .benefitSplitGrid{
+    display: grid;
+    grid-template-columns: 10% 80%;
+    padding-left:5%;
+    grid-column-gap: 1%;
+  }
+  #benefitGroup
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .benefitHeader{
+    display: none;
+  }
+  #nextSteps h3{
+    font-size: 30px;
+    margin-bottom: -2%;
+  }
+  #nextSteps{
+    padding-top: 5%;
+  }
+  #process{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+    padding:5%;
+    grid-row-gap:0%;
+    height:auto;
+    margin-bottom:5%;
+    margin-top:0;
+  }
+  .step{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .stepImg{
+    width:auto;
+    height:100px;
+  }
+  .stepHeader{
+    display: grid;
+    grid-template-columns: 60% auto;
+    margin:0 2%;
+    margin-bottom: 0%;
+  }
+  .hide{
+    display: none;
+  }
+  #readyApply p{
+    margin-bottom:5%;
+  }
+}

@@ -27,7 +27,7 @@
   background-color: black;
   border: 2px solid #422800;
   border-radius: 30px;
-  color: white;
+  color: #FFFBF2;
   cursor: pointer;
   font-weight: 600;
   font-size: 18px;
@@ -40,7 +40,7 @@
   touch-action: manipulation;
 }
 .universalBtn:hover {
-  background-color: white;
+  background-color: #FFFBF2;
   color:black;
 }
 .universalBtn:active {
@@ -158,16 +158,16 @@ label {
 }
 .contactSubmitBtn{
   width:40%;
-  background:black;
+  background:#FFFBF2;
   border:1px solid black;
   padding:3% 4%;
   border-radius: 50px;
   font-size: 16px;
-  color:white;
+  color:black;
 }
 .contactSubmitBtn:hover{
   box-shadow: #422800 2px 2px 0 0;
-  background:white;
+  background:#BCD0AB;
   color: black;
 }
 .contactSubmitBtn:active {
@@ -324,7 +324,7 @@ label {
   }
   #missionStatement{
     margin:0%;
-    margin-top: -1%;
+    margin-top: 0%;
   }
   #missionStatement h3{
     font-weight: normal;

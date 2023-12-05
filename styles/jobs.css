@@ -88,7 +88,6 @@
   position: relative;
   display: grid;
   grid-template-columns: 33% 34% 33%;
-  grid-template-rows: 100%;
 }
 /*CHECKBOXES DESIGN*/
 .box{
@@ -214,7 +213,6 @@
   position: relative;
   display: grid;
   grid-template-columns: 75% 25%;
-  grid-template-rows: 100%;
   padding: 1% 1%;
   margin: auto 2%;
 }
@@ -562,4 +560,76 @@
   grid-template-rows: 100%;
   padding: 1% 1%;
   margin: auto 2%;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .filtersSplitGrid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 10%;
+  }
+  .openJob{
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 1% 1%;
+    margin: auto 2%;
+  }
+  .jobCard h1{
+    margin: 1% 1%;
+    font-size:25px;
+  }
+  .tags{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    margin: auto 5%;
+    margin-left:0;
+    margin-bottom: 1%;
+  }
+  #contactJobs{
+    grid-template-columns: 100%;
+  }
+  #contactJobs img{
+    display: none;
+  }
+  .contactCategoryGrid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 5%;
+    padding-bottom:5%;
+    margin-bottom:10%;
+  }
+  .jobBody{
+    height:110vh;
+    display:grid;
+    grid-template-columns: 100%;
+    margin-bottom:2.1%;
+  }
+  .jobMeta h1{
+    font-size: 3.5rem;
+    margin-bottom:3%;
+    margin-top: 0%;
+  }
+  .jobMeta h3{
+    font-size: 2rem;
+    display: inline;
+    margin-left:5px;
+  }
+  .jobMeta i{
+    font-size: 2rem;
+  }
+  .jobMeta{
+    padding-right:5%;
+  }
+  .jobDetails .jobCategory{
+    background:none;
+    width:100%;
+  }
+  #arrow{
+    margin-left:25%;
+  }
 }

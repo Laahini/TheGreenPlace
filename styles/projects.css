@@ -163,8 +163,9 @@
   touch-action: manipulation;
 }
 .jobsBtn:hover {
-  background-color: black;
-  color:white;
+  background-color: #182626;
+  color:#FFFBF2;
+  border-color: white;
 }
 .jobsBtn:active {
   box-shadow: #422800 1px 1px 0 0;
@@ -247,16 +248,16 @@ label {
 }
 .contactSubmitBtn{
   width:40%;
-  background:black;
+  background:#FFFBF2;
   border:1px solid black;
   padding:3% 4%;
   border-radius: 50px;
   font-size: 16px;
-  color:white;
+  color:black;
 }
 .contactSubmitBtn:hover{
   box-shadow: #422800 2px 2px 0 0;
-  background:white;
+  background:#BCD0AB;
   color: black;
 }
 .contactSubmitBtn:active {
