@@ -106,6 +106,7 @@
   padding:10% 8%;
   margin:5% 5%;
   border-radius: 20px;
+  padding-bottom: 2%;
 }
 .product p{
   padding:0% 5%;
@@ -118,6 +119,7 @@
 .smallIcon{
   width:100%;
   border-radius: 20px;
+  height:200px;
 }
 #newestProduct{
   display: grid;
@@ -145,10 +147,10 @@
   margin-bottom: 15%;
 }
 .jobsBtn {
-  background-color: black;
+  background-color: white;
   border: 2px solid black;
   border-radius: 30px;
-  color: white;
+  color: black;
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
@@ -161,8 +163,8 @@
   touch-action: manipulation;
 }
 .jobsBtn:hover {
-  background-color: white;
-  color:black;
+  background-color: black;
+  color:white;
 }
 .jobsBtn:active {
   box-shadow: #422800 1px 1px 0 0;
