@@ -38,7 +38,7 @@
     margin-top: -9px;
 }
 .checkbox-dropdown.is-active {
-    background: #93CD01;
+    background: #BCD0AB;
 }
 .checkbox-dropdown-list {
     list-style: none;
@@ -81,7 +81,7 @@
     transition: all 0.2s ease-out;
 }
 .checkbox-dropdown-list li label:hover {
-    background-color: #93CD01;
+    background-color: #BCD0AB;
     color: white;
 }
 .filtersSplitGrid{
@@ -148,10 +148,13 @@
   transition: opacity 0.25s ease;
 }
 .check span {
-  color: #333;
+  color: #182626;
   line-height: 1.4;
   font-size: 16px;
   font-weight: bold;
+}
+#contactJobs .check span {
+  color: #FFFBF2;
 }
 /*JOB BOARD*/
 #jobBoard{
@@ -160,7 +163,7 @@
   margin-top:10%;
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
-  background: white;
+  background: transparent;
 }
 .showBtnContainer{
   text-align:center;
@@ -205,6 +208,7 @@
   border:2px solid black;
   border-radius:15px;
   margin:3% 5%;
+
 }
 .openJob{
   position: relative;
@@ -227,7 +231,7 @@
   color:black;
 }
 .jobCard a:hover{
-  color:#93CD01;
+  color:#6a9401;
 }
 .location h3, .workType h3{
   display: inline;
@@ -244,7 +248,7 @@
   margin:0%;
 }
 .jobCategory{
-  background:pink;
+  background:#BCD0AB;
   margin-top:5%;
   border-radius: 25px;
   margin-left:35%;
@@ -258,7 +262,8 @@
 #contactJobs{
   padding:5%;
   padding-left:10%;
-  background:#93CD01;
+  background:#182626;
+  color:#FFFBF2;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
   display:grid;
@@ -373,12 +378,13 @@
   height:110vh;
   display:grid;
   grid-template-columns: 50% 50%;
+  margin-bottom:2.1%;
 }
 .jobMeta{
   padding-left:5%;
   padding-top:13%;
   padding-bottom:10%;
-  background:pink;
+  background:#BCD0AB;
 }
 .jobMeta h1{
   font-size: 100px;
@@ -411,7 +417,7 @@
 .arrow-button {
     display: flex;
     color: black;
-    background-color: white;
+    background-color: transparent;
     padding: 3% 5%;
     padding-right:0%;
     border-radius: 50px;

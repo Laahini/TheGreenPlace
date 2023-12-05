@@ -99,7 +99,7 @@ label {
 }
 #otherContact{
   padding:5% 10%;
-  background: pink;
+  background:#BCD0AB;
 }
 .otherGrid{
   display: grid;

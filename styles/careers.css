@@ -18,7 +18,7 @@
 }
 .jobsBtn {
   background-color: black;
-  border: 2px solid #422800;
+  border: 2px solid black;
   border-radius: 30px;
   color: white;
   cursor: pointer;
@@ -145,7 +145,7 @@
   align-items: center;
 }
 #basics, #professional, #environment, #health{
-  background: pink;
+  border-bottom:2px solid black;
   margin-bottom: 2%;
   margin-top: 2%;
 }
@@ -163,7 +163,7 @@
 }
 #nextSteps h3{
   font-size: 40px;
-  margin-bottom:0%;
+  margin-bottom:2%;
   text-align: center;
 }
 #process{
@@ -175,10 +175,10 @@
   padding-bottom:0%;
 }
 .step{
-  background-color: pink;
+  background-color: #BCD0AB;
   padding:5%;
   border-radius: 20px;
-  padding-bottom:10%;
+  padding-bottom:5%;
   padding-top:8%;
 }
 .step h4{
@@ -194,11 +194,13 @@
 }
 .stepDescrip{
   margin:auto 2%;
+  padding-top:15%;
 }
 #readyApply{
   text-align: center;
   padding:5% 20%;
-  background:pink;
+  background:#182626;
+  color:#FFFBF2;
 }
 #readyApply p{
   margin-bottom:3%;
