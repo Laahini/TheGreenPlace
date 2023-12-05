@@ -1,6 +1,6 @@
 #careersCover{
   width:100%;
-  background-image: url("https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=");
+  background-image: url("../media/careers2.png");
   background-size: cover;
 }
 #coverMessage
@@ -10,11 +10,11 @@
 #coverMessage h1
 {
   font-size: 100px;
-  color:black;
+  color:#FFFBF2;
   font-weight: bolder;
 }
 #coverMessage h2{
-  color:black;
+  color:#FFFBF2;
 }
 .jobsBtn {
   background-color: black;
@@ -95,6 +95,10 @@
 #values{
   margin:4% auto;
   text-align: center;
+  background: #182626;
+  color:#FFFBF2;
+  padding:5%;
+  margin-top:0%;
 }
 #values h1, #benefits h1{
   font-size: 45px;
@@ -191,10 +195,14 @@
   display: grid;
   grid-template-columns: auto auto;
   margin:auto 2%;
+  margin-bottom: 0%;
+}
+.stepImg{
+  width:100%;
 }
 .stepDescrip{
   margin:auto 2%;
-  padding-top:15%;
+  padding-top:5%;
 }
 #readyApply{
   text-align: center;
@@ -204,4 +212,7 @@
 }
 #readyApply p{
   margin-bottom:3%;
+}
+#readyApply img{
+  width:100px;
 }

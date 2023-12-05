@@ -1,6 +1,6 @@
 #projectsCover{
   width:100%;
-  background-image: url("https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=");
+  background-image: url("../media/careers.png");
   background-size: cover;
 }
 #coverMessage
@@ -10,11 +10,11 @@
 #coverMessage h1
 {
   font-size: 100px;
-  color:black;
+  color:#FFFBF2;
   font-weight: bolder;
 }
 #coverMessage h2{
-  color:black;
+  color:#FFFBF2;
 }
 #projectStatement p{
   text-align:center;

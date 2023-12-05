@@ -3,7 +3,7 @@ h5{
 }
 #aboutCover{
   width:100%;
-  background-image: url("https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=");
+  background-image: url("../media/about.png");
   background-size: cover;
 }
 #coverMessage
@@ -24,7 +24,7 @@ h5{
 }
 .jobsBtn {
   background-color: black;
-  border: 2px solid #422800;
+  border: 2px solid black;
   border-radius: 30px;
   color: white;
   cursor: pointer;
@@ -78,7 +78,8 @@ h5{
 }
 #ourTeam{
   text-align: center;
-
+  background: #182626;
+  color:#FFFBF2;
   padding-top:5%;
   border-radius:5%;
 }
