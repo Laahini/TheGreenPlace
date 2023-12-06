@@ -307,8 +307,8 @@ a {
     border-bottom:1px solid #FFFBF2;
   }
   .mobile-two .mobile-nav li a:hover{
-  	background-color: blue;
-  	color: #fff;
+  	background-color: #FFFBF2;
+  	color: black;
   }
   #logo img{
     padding:10px;
