@@ -335,4 +335,10 @@
   #readyApply p{
     margin-bottom:5%;
   }
+  #coverMessage h1{
+    font-size:4.5rem;
+  }
+  #coverMessage h2{
+    font-size:1rem;
+  }
 }

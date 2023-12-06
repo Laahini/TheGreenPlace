@@ -30,6 +30,35 @@
     	<a href="../contact.html" class="menu-link2">Contact</a>
     </div>
   </div>
+
+  <nav id="mobileNav">
+    <div class="mobile-two">
+			<div class="header">
+				<div class="menu-toggle">
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="mobile-nav">
+				<img src="../media/logo.png" id="logo">
+				<ul>
+					<li><a href="../index.html" class="menu-link2">Home</a></li>
+					<li><a href="../about.html" class="menu-link2">About</a></li>
+					<li><a href="../projects.html" class="menu-link2">Projects</a></li>
+					<li><a href="../careers.html" class="menu-link2">Careers</a></li>
+					<li><a href="../contact.html" class="menu-link2">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+  </nav>
+  <script>
+    $(document).ready(function() {
+      //MOBILE TWO
+      $(".mobile-two .menu-toggle").click(function() {
+      $(this).parent().next(".mobile-nav").toggle(0 , "display");
+      });
+    });
+  </script>
 <!--
   <nav id="mobileNav">
     <a href="index.html" id="logo"><img src="../media/logo.png"></a>

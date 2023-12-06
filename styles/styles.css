@@ -6,6 +6,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  z-index: 0;
 }
 body {
   margin: 0;
@@ -184,7 +185,7 @@ a {
   #mobileNav{
     display:inline-block;
   }
-  .input-toggler {
+  /* .input-toggler {
     display: none;
   }
   .menu-toggler {
@@ -252,12 +253,67 @@ a {
   .input-toggler:checked ~ .sidebar {
     transform: translateX(0%);
     opacity: 0.99;
-  }
+  } */
   #logo img{
     width: auto;
     height:25%;
   }
   #copyright p{
     text-align: center;
+  }
+  .mobile .header{
+  	background-color: #182626;
+  	color: #fff;
+  	padding: 10px;
+  }
+  .line{
+  	width: 30px;
+  	height: 2px;
+  	margin: 10px 0;
+  	background-color: #fff;
+  }
+  .menu-toggle:hover{
+  	cursor: pointer;
+  }
+  .mobile-nav ul{
+  	padding: 0;
+  	margin: 0;
+  	list-style-type: none;
+    padding-top: 5%;
+    padding-left:5%;
+  }
+  .mobile-two{
+  	background: #8a43a3;
+    z-index: 1000000000;
+  }
+  .mobile-two .mobile-nav{
+    position:relative;
+    z-index: 1000000000;
+  	background-color: #182626;
+  	width: 100%;
+  	height: 100vh;
+  	display: none;
+  	text-align: center;
+  }
+  .mobile-two .mobile-nav li a{
+  	color: white;
+  	display: block;
+    margin:5% auto;
+  	padding: 15px 20px;
+    text-align: left;
+    padding-left:5%;
+    margin-right: 10%;
+    border-radius: 0;
+    border-bottom:1px solid #FFFBF2;
+  }
+  .mobile-two .mobile-nav li a:hover{
+  	background-color: blue;
+  	color: #fff;
+  }
+  #logo img{
+    padding:10px;
+    padding-left:0px;
+    width:100%;
+    height:70px;
   }
 }

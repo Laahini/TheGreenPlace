@@ -209,7 +209,13 @@ label {
   border-radius: 20px;
 }
 
-
+#nonDrag{
+  display:none;
+}
+#nonDrag ul{
+  display: flex;
+  justify-content: space-around;
+}
 #partnerships{
   text-align:center;
   background: #f5eedf;
@@ -235,7 +241,7 @@ label {
 #partnerships .wrapper:before, #partnerships .wrapper:after {
   position: absolute;
   top: 0;
-  z-index: 1;
+
   content: "";
   display: block;
   width: 20px;
@@ -334,9 +340,16 @@ label {
   #partnerships{
     margin:0% 0%;
     height:auto;
-    margin-top: 20%;
+    margin-top: 30%;
     margin-bottom: 5%;
     width:100%;
+    z-index: 0;
+  }
+  .wrapper{
+    display: none;
+  }
+  #nonDrag{
+    display: block;
   }
   #commitments{
     display: grid;
@@ -382,6 +395,16 @@ label {
     grid-column-gap: 0%;
     padding:5% 5%;
     background: #182626;
+    color:#FFFBF2;
+  }
+  .inputs--filled label {
+    transform: none;
+  }
+
+  label {
+    display: inline-block;
+    transform: none;
+    transition: 0.15s;
     color:#FFFBF2;
   }
 }

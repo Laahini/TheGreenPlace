@@ -119,3 +119,50 @@ label {
 .otherGrid a:hover{
   text-decoration: underline;
 }
+@media only screen and (max-width: 992px){
+  .hide{
+    display: none;
+  }
+  .inputs--filled label {
+    transform: none;
+  }
+
+  label {
+    display: inline-block;
+    transform: none;
+    transition: 0.15s;
+    color:#FFFBF2;
+  }
+  .contactSubmitBtn{
+    width:100%;
+    background:black;
+    border:1px solid black;
+    padding:4%;
+    border-radius: 10px;
+    font-size: 16px;
+    color:white;
+  }
+  #contactForm h2{
+    font-size: 20px;
+    text-align: left;
+  }
+  .questionGrid{
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-column-gap: 10%;
+  }
+  .otherGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 10%;
+    margin-bottom: 5%;
+  }
+  #otherContact h1{
+    font-size:1.75rem;
+  }
+  .otherGrid a{
+    color:black;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}

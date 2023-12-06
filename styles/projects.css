@@ -264,3 +264,49 @@ label {
   box-shadow: #422800 1px 1px 0 0;
   transform: translate(2px, 2px);
 }
+@media only screen and (max-width: 992px) {
+
+  #coverMessage h1
+  {
+    font-size: 4rem;
+  }
+  #responsibility{
+    margin-top: 0%;
+  }
+  #products{
+    padding:5%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+    grid-row-gap:1%;
+    text-align: center;
+    padding-bottom:10%;
+  }
+  #newestProduct{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap:0%;
+  }
+  #newestProduct img{
+    display: none;
+  }
+  #joinUsFooter
+  {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+    padding:5% 5%;
+    background: #182626;
+    color:#FFFBF2;
+  }
+  .inputs--filled label {
+    transform: none;
+  }
+
+  label {
+    display: inline-block;
+    transform: none;
+    transition: 0.15s;
+    color:#FFFBF2;
+  }
+}
