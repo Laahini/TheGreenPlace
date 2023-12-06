@@ -17,17 +17,14 @@ function showMore() {
 }
 
 
-
-
 /*JOB SEARCH FILTERS*/
 var allCheckboxes = document.querySelectorAll('input[type=checkbox]');
-var allPlayers = Array.from(document.querySelectorAll('.jobCard'));
+var allJobs = Array.from(document.querySelectorAll('.jobCard'));
 var checked = {};
 
 getChecked('careerType');
 getChecked('location');
 getChecked('jobType');
-
 
 Array.prototype.forEach.call(allCheckboxes, function (el) {
   el.addEventListener('change', toggleCheckbox);
@@ -45,7 +42,7 @@ function getChecked(name) {
 }
 
 function setVisibility() {
-  allPlayers.map(function (el) {
+  allJobs.map(function (el) {
     var careerType = checked.careerType.length ? _.intersection(Array.from(el.classList), checked.careerType).length : true;
     var location = checked.location.length ? _.intersection(Array.from(el.classList), checked.location).length : true;
     var jobType = checked.jobType.length ? _.intersection(Array.from(el.classList), checked.jobType).length : true;
