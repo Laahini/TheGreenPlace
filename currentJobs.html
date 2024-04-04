@@ -448,6 +448,15 @@
   </div>
   <script src="scripts/scripts.js"></script>
 </body>
+<script>
+  $(".checkbox-dropdown").click(function () {
+    $(this).toggleClass("is-active");
+  });
+
+  $(".checkbox-dropdown ul").click(function (e) {
+    e.stopPropagation();
+  });
+</script>
 
 <footer>
   <div id="footerGrid">
